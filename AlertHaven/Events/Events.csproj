@@ -31,7 +31,6 @@
     <Folder Include="Application\Services\" />
     <Folder Include="Domain\Interface\" />
     <Folder Include="Application\Dto\" />
-    <Folder Include="Infraestructure\Data\AppData\" />
     <Folder Include="Infraestructure\Data\Migrations\" />
     <Folder Include="Infraestructure\Data\Repositories\" />
   </ItemGroup>

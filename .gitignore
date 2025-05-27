@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/AlertHaven/Events/appsettings.json
+/AlertHaven/Events/appsettings.Development.json
+/AlertHaven/.vs/AlertHaven/FileContentIndex
+/AlertHaven/.vs/AlertHaven/CopilotIndices

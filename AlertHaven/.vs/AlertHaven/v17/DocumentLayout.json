@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Program.cs",
+              "RelativeDocumentMoniker": "Events\\Program.cs",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Program.cs",
+              "RelativeToolTip": "Events\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T01:52:55.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Events\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Events\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T01:52:52.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Events\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Events\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-27T01:52:51.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Events\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Events\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T01:52:42.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Events\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Events\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T01:52:34.703Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

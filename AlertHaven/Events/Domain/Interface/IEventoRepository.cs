@@ -1,8 +1,8 @@
 ﻿using Events.Domain.Entities;
 
-namespace Events.Application.Interfaces
+namespace Events.Domain.Interface
 {
-    public interface IEventoService
+    public interface IEventoRepository
     {
         EventoEntity ObterEventoPorId(string Id);
         IEnumerable<EventoEntity> ObterTodosOsEventos();
@@ -10,5 +10,6 @@ namespace Events.Application.Interfaces
         EventoEntity PersistirEvento(EventoEntity EventoEntity);
         EventoEntity AtualizarEvento(EventoEntity EventoEntity, string id);
         EventoEntity DeletarEvento(string id);
+        bool ExisteEventoPorId(string Id);
     }
 }

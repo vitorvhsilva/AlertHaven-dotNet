@@ -1,16 +1,16 @@
-﻿using Events.Application.Interfaces;
-using Events.Domain.Entities;
+﻿using Events.Domain.Entities;
 using Events.Domain.Interface;
+using Events.Infraestructure.Data.AppData;
 
-namespace Events.Application.Services
+namespace Events.Infraestructure.Data.Repositories
 {
-    public class EventoService : IEventoService
+    public class EventoRepository : IEventoRepository
     {
-        private readonly IEventoRepository _repository;
+        private readonly ApplicationContext _context;
 
-        public EventoService(IEventoRepository repository)
+        public EventoRepository(ApplicationContext context)
         {
-            _repository = repository;
+            _context = context;
         }
 
         public EventoEntity AtualizarEvento(EventoEntity EventoEntity, string id)
@@ -19,6 +19,11 @@ namespace Events.Application.Services
         }
 
         public EventoEntity DeletarEvento(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool ExisteEventoPorId(string Id)
         {
             throw new NotImplementedException();
         }

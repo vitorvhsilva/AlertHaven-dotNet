@@ -21,6 +21,9 @@ builder.Services.AddAutoMapper(typeof(ControllerMapper));
 builder.Services.AddTransient<IIotService, IotService>();
 builder.Services.AddTransient<IIotRepository, IotRepository>();
 
+builder.Services.AddTransient<IEventoService, EventoService>();
+builder.Services.AddTransient<IEventoRepository, EventoRepository>();
+
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {

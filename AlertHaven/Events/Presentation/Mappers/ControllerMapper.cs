@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using Events.Application.Dto;
+using Events.Application.Dto.Iot;
+using Events.Application.Dto.Evento;
 using Events.Domain.Entities;
 
 namespace Events.Presentation.Mappers
@@ -13,7 +14,13 @@ namespace Events.Presentation.Mappers
             CreateMap<IotEntity, ObterIotCompletoDTO>();
             CreateMap<IotEntity, ObterIotSimplesDTO>();
             CreateMap<AtualizarIotInputDTO, IotEntity>();
-             
+
+
+            CreateMap<PersistirEventoInputDTO, EventoEntity>();
+            CreateMap<EventoEntity, PersistirEventoOutputDTO>();
+            CreateMap<EventoEntity, ObterEventoCompletoDTO>();
+            CreateMap<EventoEntity, ObterEventoSimplesDTO>();
+            CreateMap<AtualizarEventoInputDTO, EventoEntity>();
         }
     }
 }

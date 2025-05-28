@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Events.Application.Dto;
+using Events.Application.Dto.Iot;
 using Events.Application.Interfaces;
 using Events.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;

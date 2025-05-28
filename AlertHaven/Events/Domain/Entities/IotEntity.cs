@@ -18,6 +18,8 @@ namespace Events.Domain.Entities
         public string LongitudeIot { get; set; }
         [Column(TypeName = "NUMBER")]
         public double UltimaLeituraIot { get; set; }
+        [Column(TypeName = "TIMESTAMP")]
+        public DateTime DataHoraUltimaLeituraIot { get; set; }
         [Column(TypeName = "VARCHAR2(255)")]
         public UnidadeMedidaIot UnidadeMedidaIot { get; set; }
         [Column(TypeName = "VARCHAR2(255)")]

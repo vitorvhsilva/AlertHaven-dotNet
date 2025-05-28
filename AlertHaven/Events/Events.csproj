@@ -27,8 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Interfaces\" />
-    <Folder Include="Application\Services\" />
     <Folder Include="Domain\Interface\" />
     <Folder Include="Application\Dto\" />
     <Folder Include="Infraestructure\Data\Migrations\" />

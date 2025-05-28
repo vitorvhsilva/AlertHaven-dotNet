@@ -22,7 +22,7 @@ namespace Events.Domain.Entities
         public DateTime DataHoraEvento{ get; set; }
 
 
-        public virtual ICollection<AlertaEntity> Alertas { get; set; }
-        public virtual IotEntity Iot { get; set; }
+        public virtual ICollection<AlertaEntity>? Alertas { get; set; }
+        public virtual IotEntity? Iot { get; set; }
     }
 }

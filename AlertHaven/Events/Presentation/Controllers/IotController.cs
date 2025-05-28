@@ -1,4 +1,7 @@
-﻿using Events.Domain.Entities;
+﻿using AutoMapper;
+using Events.Application.Dto;
+using Events.Application.Interfaces;
+using Events.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Events.Presentation.Controllers
@@ -7,6 +10,14 @@ namespace Events.Presentation.Controllers
     [ApiController]
     public class IotController : ControllerBase
     {
+        private readonly IMapper _mapper;
+        private readonly IIotService _iotService;
+
+        public IotController(IMapper mapper, IIotService iotService)
+        {
+            _mapper = mapper;
+            _iotService = iotService;
+        }
 
         //IEnumerable<ObterIotSimplesDTO>
         [HttpGet]
@@ -24,9 +35,13 @@ namespace Events.Presentation.Controllers
 
         //PersistirIotOutputDTO
         [HttpPost]
-        public IActionResult PersistirIot([FromBody]string value)
+        public IActionResult PersistirIot([FromBody] PersistirIotInputDTO dto)
         {
-            return Ok();
+            var iot = _mapper.Map<PersistirIotInputDTO, IotEntity>(dto);
+            var entity = _iotService.PersistirIot(iot);
+            var output = _mapper.Map<IotEntity, PersistirIotOutputDTO>(entity);
+
+            return CreatedAtAction(nameof(ObterIotPorId), new { IdIot = output.IdIot}, output);
         }
 
         //AtualizarIotOutputDTO

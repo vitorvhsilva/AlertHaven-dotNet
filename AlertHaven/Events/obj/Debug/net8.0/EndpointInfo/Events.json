@@ -4,6 +4,165 @@
     "title": "Events",
     "version": "1.0"
   },
-  "paths": { },
-  "components": { }
+  "paths": {
+    "/api/Iot": {
+      "get": {
+        "tags": [
+          "Iot"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Iot"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersistirIotInputDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersistirIotInputDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersistirIotInputDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Iot/{id}": {
+      "get": {
+        "tags": [
+          "Iot"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Iot"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Iot"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PersistirIotInputDTO": {
+        "type": "object",
+        "properties": {
+          "tipoIot": {
+            "$ref": "#/components/schemas/TipoIot"
+          },
+          "unidadeMedidaIot": {
+            "$ref": "#/components/schemas/UnidadeMedidaIot"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoIot": {
+        "enum": [
+          "SENSOR_NIVEL_DE_AGUA",
+          "ANENOMETRO",
+          "SISMOGRAFO",
+          "SENSOR_TEMPERATURA"
+        ],
+        "type": "string"
+      },
+      "UnidadeMedidaIot": {
+        "enum": [
+          "METROS",
+          "KM",
+          "RICHTER",
+          "CELSIUS"
+        ],
+        "type": "string"
+      }
+    }
+  }
 }

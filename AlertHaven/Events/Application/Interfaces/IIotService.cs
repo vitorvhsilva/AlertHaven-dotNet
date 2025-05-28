@@ -9,6 +9,6 @@ namespace Events.Application.Interfaces
         IEnumerable<IotEntity> ObterTodosOsIots(); 
         IotEntity PersistirIot(IotEntity IotEntity); 
         IotEntity AtualizarIot(IotEntity IotEntity); 
-        void DeletarIot(IotEntity IotEntity); 
+        void DeletarIot(IotEntity IotEntity);
     }
 }

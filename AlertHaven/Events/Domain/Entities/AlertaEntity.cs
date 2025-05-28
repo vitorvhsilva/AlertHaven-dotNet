@@ -17,6 +17,6 @@ namespace Events.Domain.Entities
         [Column(TypeName = "VARCHAR2(255)")]
         public DateTime DataHoraAlerta { get; set; }
 
-        public virtual EventoEntity Evento { get; set; }
+        public virtual EventoEntity? Evento { get; set; }
     }
 }

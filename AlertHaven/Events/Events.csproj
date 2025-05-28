@@ -27,10 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\Interface\" />
-    <Folder Include="Application\Dto\" />
     <Folder Include="Infraestructure\Data\Migrations\" />
-    <Folder Include="Infraestructure\Data\Repositories\" />
   </ItemGroup>
 
 </Project>

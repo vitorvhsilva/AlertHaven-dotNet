@@ -1,1 +1,81 @@
-[]
+[
+  {
+    "ContainingType": "Events.Presentation.Controllers.IotController",
+    "Method": "ObterTodosOsIots",
+    "RelativePath": "api/Iot",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.IotController",
+    "Method": "PersistirIot",
+    "RelativePath": "api/Iot",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Events.Application.Dto.PersistirIotInputDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.IotController",
+    "Method": "ObterIotPorId",
+    "RelativePath": "api/Iot/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.IotController",
+    "Method": "AtualizarIot",
+    "RelativePath": "api/Iot/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.IotController",
+    "Method": "DeletarIot",
+    "RelativePath": "api/Iot/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

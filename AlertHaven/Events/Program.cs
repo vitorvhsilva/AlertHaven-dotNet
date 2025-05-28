@@ -1,4 +1,9 @@
+using Events.Application.Interfaces;
+using Events.Application.Services;
+using Events.Domain.Interface;
 using Events.Infraestructure.Data.AppData;
+using Events.Infraestructure.Data.Repositories;
+using Events.Presentation.Mappers;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
@@ -11,7 +16,10 @@ builder.Services.AddDbContext<ApplicationContext>(x => {
     x.UseOracle(builder.Configuration.GetConnectionString("Oracle"));
 });
 
-//builder.Services.AddAutoMapper(typeof(ControllerMapper));
+builder.Services.AddAutoMapper(typeof(ControllerMapper));
+
+builder.Services.AddTransient<IIotService, IotService>();
+builder.Services.AddTransient<IIotRepository, IotRepository>();
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>

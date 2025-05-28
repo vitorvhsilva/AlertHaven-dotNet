@@ -1,0 +1,56 @@
+﻿using Events.Domain.Entities;
+using Events.Domain.Interface;
+using Events.Infraestructure.Data.AppData;
+
+namespace Events.Infraestructure.Data.Repositories
+{
+    public class IotRepository : IIotRepository
+    {
+        private readonly ApplicationContext _context;
+
+        public IotRepository(ApplicationContext context)
+        {
+            _context = context;
+        }
+
+        public IotEntity AtualizarIot(IotEntity IotEntity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeletarIot(IotEntity IotEntity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IotEntity ObterIotPorId(string Id)
+        {
+            return _context.IotEntities.FirstOrDefault(i => i.IdIot == Id);
+        }
+
+        public IEnumerable<IotEntity> ObterTodosOsIots()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IotEntity PersistirIot(IotEntity IotEntity)
+        {
+            _context.IotEntities.Add(IotEntity);
+            _context.SaveChanges();
+
+            return ObterIotPorId(IotEntity.IdIot);
+        }
+
+        public bool ExisteIotPorId(string Id)
+        {
+            try
+            {
+                return _context.IotEntities.Where(i => i.IdIot == Id).Any();
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
+    }
+}

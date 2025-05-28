@@ -13,18 +13,18 @@ namespace Events.Domain.Entities
         [Column(TypeName = "VARCHAR2(255)")]
         public TipoIot TipoIot { get; set; }
         [Column(TypeName = "VARCHAR2(255)")]
-        public string LatitudeIot { get; set; }
+        public string? LatitudeIot { get; set; } = "";
         [Column(TypeName = "VARCHAR2(255)")]
-        public string LongitudeIot { get; set; }
-        [Column(TypeName = "NUMBER")]
+        public string? LongitudeIot { get; set; } = "";
+        [Column(TypeName = "NUMBER")] 
         public double UltimaLeituraIot { get; set; }
         [Column(TypeName = "TIMESTAMP")]
-        public DateTime DataHoraUltimaLeituraIot { get; set; }
+        public DateTime? DataHoraUltimaLeituraIot { get; set; }
         [Column(TypeName = "VARCHAR2(255)")]
         public UnidadeMedidaIot UnidadeMedidaIot { get; set; }
         [Column(TypeName = "VARCHAR2(255)")]
-        public StatusIot StatusIot { get; set; }
+        public StatusIot? StatusIot { get; set; }
 
-        public virtual ICollection<EventoEntity> Eventos { get; set; }
+        public virtual ICollection<EventoEntity>? Eventos { get; set; }
     }
 }

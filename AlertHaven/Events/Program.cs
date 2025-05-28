@@ -24,12 +24,12 @@ builder.Services.AddTransient<IIotRepository, IotRepository>();
 builder.Services.AddTransient<IEventoService, EventoService>();
 builder.Services.AddTransient<IEventoRepository, EventoRepository>();
 
+
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
         options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
     });
-
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -52,7 +52,7 @@ else
     app.UseSwaggerUI();
 }
 
-    app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();

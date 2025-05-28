@@ -60,6 +60,11 @@ namespace Events.Presentation.Controllers
         [HttpPost]
         public IActionResult PersistirAlerta([FromBody] PersistirAlertaInputDTO dto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var alerta = _mapper.Map<PersistirAlertaInputDTO, AlertaEntity>(dto);
             var entity = _alertaService.PersistirAlerta(alerta);
             var output = _mapper.Map<AlertaEntity, PersistirAlertaOutputDTO>(entity);
@@ -71,6 +76,11 @@ namespace Events.Presentation.Controllers
         [HttpPatch("{id}")]
         public IActionResult AtualizarAlerta(string id, [FromBody] AtualizarAlertaInputDTO dto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var alerta = _mapper.Map<AtualizarAlertaInputDTO, AlertaEntity>(dto);
             var entity = _alertaService.AtualizarAlerta(alerta, id);
 

@@ -62,6 +62,11 @@ namespace Events.Presentation.Controllers
         [HttpPost]
         public IActionResult PersistirEvento([FromBody] PersistirEventoInputDTO dto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var iot = _mapper.Map<PersistirEventoInputDTO, EventoEntity>(dto);
             var entity = _eventoService.PersistirEvento(iot);
             var output = _mapper.Map<EventoEntity, PersistirEventoOutputDTO>(entity);
@@ -73,6 +78,11 @@ namespace Events.Presentation.Controllers
         [HttpPatch("{id}")]
         public IActionResult AtualizarEvento(string id, [FromBody] AtualizarEventoInputDTO dto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var iot = _mapper.Map<AtualizarEventoInputDTO, EventoEntity>(dto);
             var entity = _eventoService.AtualizarEvento(iot, id);
 

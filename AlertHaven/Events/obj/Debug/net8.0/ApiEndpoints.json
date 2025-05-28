@@ -1,5 +1,100 @@
 [
   {
+    "ContainingType": "Events.Presentation.Controllers.AlertaController",
+    "Method": "ObterTodosOsAlertas",
+    "RelativePath": "api/Alerta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.AlertaController",
+    "Method": "PersistirAlerta",
+    "RelativePath": "api/Alerta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Events.Application.Dto.Alerta.PersistirAlertaInputDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.AlertaController",
+    "Method": "ObterAlertaPorId",
+    "RelativePath": "api/Alerta/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.AlertaController",
+    "Method": "AtualizarAlerta",
+    "RelativePath": "api/Alerta/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Events.Application.Dto.Alerta.AtualizarAlertaInputDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.AlertaController",
+    "Method": "DeletarAlerta",
+    "RelativePath": "api/Alerta/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.AlertaController",
+    "Method": "ObterTodosOsAlertasPorEvento",
+    "RelativePath": "api/Alerta/iot/{IdIot}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdIot",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Events.Presentation.Controllers.EventoController",
     "Method": "ObterTodosOsEventos",
     "RelativePath": "api/Evento",

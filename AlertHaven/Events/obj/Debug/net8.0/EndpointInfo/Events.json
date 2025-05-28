@@ -5,6 +5,150 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Alerta": {
+      "get": {
+        "tags": [
+          "Alerta"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Alerta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersistirAlertaInputDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersistirAlertaInputDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersistirAlertaInputDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Alerta/{id}": {
+      "get": {
+        "tags": [
+          "Alerta"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Alerta"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarAlertaInputDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarAlertaInputDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarAlertaInputDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Alerta"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Alerta/iot/{IdIot}": {
+      "get": {
+        "tags": [
+          "Alerta"
+        ],
+        "parameters": [
+          {
+            "name": "IdIot",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Evento": {
       "get": {
         "tags": [
@@ -274,6 +418,19 @@
   },
   "components": {
     "schemas": {
+      "AtualizarAlertaInputDTO": {
+        "type": "object",
+        "properties": {
+          "nivelAlerta": {
+            "$ref": "#/components/schemas/NivelAlerta"
+          },
+          "mensagemAlerta": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "AtualizarEventoInputDTO": {
         "type": "object",
         "properties": {
@@ -306,6 +463,36 @@
           "CRITICO"
         ],
         "type": "string"
+      },
+      "NivelAlerta": {
+        "enum": [
+          "BAIXO",
+          "MEDIO",
+          "ALTO",
+          "CRITICO"
+        ],
+        "type": "string"
+      },
+      "PersistirAlertaInputDTO": {
+        "type": "object",
+        "properties": {
+          "idEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "nivelAlerta": {
+            "$ref": "#/components/schemas/NivelAlerta"
+          },
+          "mensagemAlerta": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataHoraAlerta": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
       },
       "PersistirEventoInputDTO": {
         "type": "object",

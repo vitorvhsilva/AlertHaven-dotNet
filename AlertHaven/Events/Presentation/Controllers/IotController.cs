@@ -56,15 +56,19 @@ namespace Events.Presentation.Controllers
             return CreatedAtAction(nameof(ObterIotPorId), new { IdIot = output.IdIot}, output);
         }
 
-        //AtualizarIotOutputDTO
-        [HttpPut("{id}")]
-        public IActionResult AtualizarIot(int id, [FromBody]string value)
+        //ObterIotCompletoDTO
+        [HttpPatch("{id}")]
+        public IActionResult AtualizarIot(string id, [FromBody] AtualizarIotInputDTO dto)
         {
-            return Ok();
+            var iot = _mapper.Map<AtualizarIotInputDTO, IotEntity>(dto);
+            var entity = _iotService.AtualizarIot(iot, id);
+            var output = _mapper.Map<IotEntity, PersistirIotOutputDTO>(entity);
+
+            return Ok(output);
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DeletarIot(int id)
+        public IActionResult DeletarIot(string id)
         {
             return Ok();
         }

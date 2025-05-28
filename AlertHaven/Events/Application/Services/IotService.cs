@@ -15,9 +15,9 @@ namespace Events.Application.Services
             _repository = repository;
         }
 
-        public IotEntity AtualizarIot(IotEntity IotEntity)
+        public IotEntity AtualizarIot(IotEntity IotEntity, string id)
         {
-            throw new NotImplementedException();
+            return _repository.AtualizarIot(IotEntity, id);
         }
 
         public void DeletarIot(IotEntity IotEntity)

@@ -67,7 +67,7 @@
           }
         }
       },
-      "put": {
+      "patch": {
         "tags": [
           "Iot"
         ],
@@ -77,8 +77,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -86,17 +85,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/AtualizarIotInputDTO"
               }
             },
             "text/json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/AtualizarIotInputDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "type": "string"
+                "$ref": "#/components/schemas/AtualizarIotInputDTO"
               }
             }
           }
@@ -117,8 +116,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
             }
           }
         ],
@@ -132,6 +130,18 @@
   },
   "components": {
     "schemas": {
+      "AtualizarIotInputDTO": {
+        "type": "object",
+        "properties": {
+          "tipoIot": {
+            "$ref": "#/components/schemas/TipoIot"
+          },
+          "unidadeMedidaIot": {
+            "$ref": "#/components/schemas/UnidadeMedidaIot"
+          }
+        },
+        "additionalProperties": false
+      },
       "PersistirIotInputDTO": {
         "type": "object",
         "properties": {

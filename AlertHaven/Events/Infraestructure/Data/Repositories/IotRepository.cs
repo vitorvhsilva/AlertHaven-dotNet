@@ -13,9 +13,16 @@ namespace Events.Infraestructure.Data.Repositories
             _context = context;
         }
 
-        public IotEntity AtualizarIot(IotEntity IotEntity)
+        public IotEntity AtualizarIot(IotEntity IotEntity, string id)
         {
-            throw new NotImplementedException();
+            var entity = ObterIotPorId(id);
+
+            entity.TipoIot = IotEntity.TipoIot;
+            entity.UnidadeMedidaIot = IotEntity.UnidadeMedidaIot;
+
+            _context.SaveChanges();
+
+            return entity;
         }
 
         public void DeletarIot(IotEntity IotEntity)

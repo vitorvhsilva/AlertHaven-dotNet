@@ -45,18 +45,18 @@
     "ContainingType": "Events.Presentation.Controllers.IotController",
     "Method": "AtualizarIot",
     "RelativePath": "api/Iot/{id}",
-    "HttpMethod": "PUT",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": true
       },
       {
-        "Name": "value",
-        "Type": "System.String",
+        "Name": "dto",
+        "Type": "Events.Application.Dto.AtualizarIotInputDTO",
         "IsRequired": true
       }
     ],
@@ -72,7 +72,7 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Int32",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

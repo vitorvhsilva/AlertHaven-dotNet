@@ -7,7 +7,7 @@ namespace Events.Domain.Interface
         IotEntity ObterIotPorId(string Id);
         IEnumerable<IotEntity> ObterTodosOsIots();
         IotEntity PersistirIot(IotEntity IotEntity);
-        IotEntity AtualizarIot(IotEntity IotEntity);
+        IotEntity AtualizarIot(IotEntity IotEntity, string id);
         void DeletarIot(IotEntity IotEntity);
         bool ExisteIotPorId(string Id);
     }

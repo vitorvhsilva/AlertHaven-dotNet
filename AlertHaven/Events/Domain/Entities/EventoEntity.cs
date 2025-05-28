@@ -18,11 +18,11 @@ namespace Events.Domain.Entities
         [Column(TypeName = "VARCHAR2(255)")]
         public IntensidadeEvento IntensidadeEvento { get; set; }
         [Column(TypeName = "VARCHAR2(255)")]
-        public string LatitudeEvento{ get; set; }
+        public string? LatitudeEvento{ get; set; }
         [Column(TypeName = "VARCHAR2(255)")]
-        public string LongitudeEvento{ get; set; }
+        public string? LongitudeEvento{ get; set; }
         [Column(TypeName = "TIMESTAMP")]
-        public DateTime DataHoraEvento{ get; set; }
+        public DateTime? DataHoraEvento{ get; set; }
 
 
         public virtual ICollection<AlertaEntity>? Alertas { get; set; }

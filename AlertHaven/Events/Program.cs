@@ -24,6 +24,9 @@ builder.Services.AddTransient<IIotRepository, IotRepository>();
 builder.Services.AddTransient<IEventoService, EventoService>();
 builder.Services.AddTransient<IEventoRepository, EventoRepository>();
 
+builder.Services.AddTransient<IAlertaService, AlertaService>();
+builder.Services.AddTransient<IAlertaRepository, AlertaRepository>();
+
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>

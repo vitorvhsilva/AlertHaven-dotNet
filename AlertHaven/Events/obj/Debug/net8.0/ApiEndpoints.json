@@ -81,13 +81,13 @@
   {
     "ContainingType": "Events.Presentation.Controllers.AlertaController",
     "Method": "ObterTodosOsAlertasPorEvento",
-    "RelativePath": "api/Alerta/iot/{IdIot}",
+    "RelativePath": "api/Alerta/evento/{IdEvento}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "IdIot",
+        "Name": "IdEvento",
         "Type": "System.String",
         "IsRequired": true
       }

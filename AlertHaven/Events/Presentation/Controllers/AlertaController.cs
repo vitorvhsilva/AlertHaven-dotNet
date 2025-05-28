@@ -46,10 +46,10 @@ namespace Events.Presentation.Controllers
         }
 
         //ObterAlertaSimplesDTO
-        [HttpGet("iot/{IdIot}")]
-        public IActionResult ObterTodosOsAlertasPorEvento(string IdIot)
+        [HttpGet("evento/{IdEvento}")]
+        public IActionResult ObterTodosOsAlertasPorEvento(string IdEvento)
         {
-            var entitys = _alertaService.ObterTodosOsAlertasPorEvento(IdIot);
+            var entitys = _alertaService.ObterTodosOsAlertasPorEvento(IdEvento);
 
             var output = _mapper.Map<IEnumerable<AlertaEntity>, IEnumerable<ObterAlertaSimplesDTO>>(entitys);
 

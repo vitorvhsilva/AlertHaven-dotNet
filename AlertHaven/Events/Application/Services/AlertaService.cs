@@ -12,34 +12,46 @@ namespace Events.Application.Services
         {
             _repository = repository;
         }
+
         public AlertaEntity AtualizarAlerta(AlertaEntity AlertaEntity, string id)
         {
-            throw new NotImplementedException();
+            return _repository.AtualizarAlerta(AlertaEntity, id);
         }
 
         public AlertaEntity DeletarAlerta(string id)
         {
-            throw new NotImplementedException();
+            return _repository.DeletarAlerta(id);
         }
 
         public AlertaEntity ObterAlertaPorId(string Id)
         {
-            throw new NotImplementedException();
+            return _repository.ObterAlertaPorId(Id);
         }
 
         public IEnumerable<AlertaEntity> ObterTodosOsAlertas()
         {
-            throw new NotImplementedException();
+            return _repository.ObterTodosOsAlertas();
         }
 
         public IEnumerable<AlertaEntity> ObterTodosOsAlertasPorEvento(string IdEvento)
         {
-            throw new NotImplementedException();
+            return _repository.ObterTodosOsAlertasPorEvento(IdEvento);
         }
 
         public AlertaEntity PersistirAlerta(AlertaEntity AlertaEntity)
         {
-            throw new NotImplementedException();
+
+            string IdAlerta = null;
+            do
+            {
+                IdAlerta = Guid.NewGuid().ToString();
+            } while (_repository.ExisteAlertaPorId(IdAlerta));
+
+            AlertaEntity.IdAlerta = IdAlerta;
+
+            var entity = _repository.PersistirAlerta(AlertaEntity);
+
+            return entity;
         }
     }
 }

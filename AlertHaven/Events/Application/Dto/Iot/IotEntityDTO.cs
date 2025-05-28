@@ -2,7 +2,7 @@
 
 namespace Events.Application.Dto.Iot
 {
-    public record IotSimplesDTO(
+    public record IotEntityDTO(
         string IdIot,
         TipoIot TipoIot,
         string LatitudeIot,

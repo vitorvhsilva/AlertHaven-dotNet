@@ -22,9 +22,15 @@ namespace Events.Presentation.Mappers
             CreateMap<EventoEntity, ObterEventoSimplesDTO>();
             CreateMap<AtualizarEventoInputDTO, EventoEntity>();
 
-            CreateMap<IotEntity, IotSimplesDTO>();
-            CreateMap<EventoEntity, EventoSimplesDTO>();
-            CreateMap<AlertaEntity, AlertaSimplesDTO>();
+            CreateMap<PersistirAlertaInputDTO, AlertaEntity>();
+            CreateMap<AlertaEntity, PersistirAlertaOutputDTO>();
+            CreateMap<AlertaEntity, ObterAlertaCompletoDTO>();
+            CreateMap<AlertaEntity, ObterAlertaSimplesDTO>();
+            CreateMap<AtualizarAlertaInputDTO, AlertaEntity>();
+
+            CreateMap<IotEntity, IotEntityDTO>();
+            CreateMap<EventoEntity, EventoEntityDTO>();
+            CreateMap<AlertaEntity, AlertaEntityDTO>();
         }
     }
 }

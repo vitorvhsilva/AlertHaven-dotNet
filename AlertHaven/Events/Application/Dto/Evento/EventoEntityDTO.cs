@@ -4,7 +4,7 @@ using Events.Domain.Entities.Enums;
 
 namespace Events.Application.Dto.Evento
 {
-    public record EventoSimplesDTO(
+    public record EventoEntityDTO(
         string IdEvento,
         string IdIot,
         TipoEvento TipoEvento,

@@ -2,11 +2,9 @@
 
 namespace Events.Application.Dto.Alerta
 {
-    public record AlertaSimplesDTO(
+    public record ObterAlertaSimplesDTO(
         string IdAlerta,
         string IdEvento,
-        NivelAlerta NivelAlerta,
-        string MensagemAlerta,
-        DateTime DataHoraAlerta
+        NivelAlerta NivelAlerta
     );
 }

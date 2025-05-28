@@ -1,8 +1,8 @@
 ﻿using Events.Domain.Entities;
 
-namespace Events.Application.Interfaces
+namespace Events.Domain.Interface
 {
-    public interface IAlertaService
+    public interface IAlertaRepository
     {
         AlertaEntity ObterAlertaPorId(string Id);
         IEnumerable<AlertaEntity> ObterTodosOsAlertas();
@@ -10,5 +10,6 @@ namespace Events.Application.Interfaces
         AlertaEntity PersistirAlerta(AlertaEntity AlertaEntity);
         AlertaEntity AtualizarAlerta(AlertaEntity AlertaEntity, string id);
         AlertaEntity DeletarAlerta(string id);
+        bool ExisteAlertaPorId(string Id);
     }
 }

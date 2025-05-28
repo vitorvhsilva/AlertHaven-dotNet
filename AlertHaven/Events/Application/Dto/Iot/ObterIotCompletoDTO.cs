@@ -13,6 +13,6 @@ namespace Events.Application.Dto.Iot
         DateTime? DataHoraUltimaLeituraIot,
         UnidadeMedidaIot UnidadeMedidaIot,
         StatusIot? StatusIot,
-        ICollection<EventoSimplesDTO>? Eventos  
+        ICollection<EventoEntityDTO>? Eventos  
     );
 }

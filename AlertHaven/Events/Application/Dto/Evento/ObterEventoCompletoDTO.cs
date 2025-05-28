@@ -13,7 +13,7 @@ namespace Events.Application.Dto.Evento
         string LatitudeEvento,
         string LongitudeEvento,
         DateTime DataHoraEvento,
-        ICollection<AlertaSimplesDTO> Alertas,
-        IotSimplesDTO Iot
+        ICollection<AlertaEntityDTO> Alertas,
+        IotEntityDTO Iot
     );
 }

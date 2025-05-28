@@ -28,7 +28,17 @@ namespace Events.Infraestructure.Data.Repositories
 
         public EventoEntity DeletarEvento(string id)
         {
-            throw new NotImplementedException();
+            var entity = _context.EventoEntities.FirstOrDefault(e => e.IdEvento == id);
+
+            if (entity is null)
+            {
+                return null;
+            }
+
+            _context.EventoEntities.Remove(entity);
+            _context.SaveChanges();
+
+            return entity;
         }
 
         public bool ExisteEventoPorId(string Id)

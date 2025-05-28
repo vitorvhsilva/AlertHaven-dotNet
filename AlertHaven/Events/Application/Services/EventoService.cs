@@ -20,7 +20,7 @@ namespace Events.Application.Services
 
         public EventoEntity DeletarEvento(string id)
         {
-            throw new NotImplementedException();
+            return _repository.DeletarEvento(id);
         }
 
         public EventoEntity ObterEventoPorId(string Id)

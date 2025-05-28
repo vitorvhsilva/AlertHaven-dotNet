@@ -276,6 +276,14 @@
     "schemas": {
       "AtualizarEventoInputDTO": {
         "type": "object",
+        "properties": {
+          "tipoEvento": {
+            "$ref": "#/components/schemas/TipoEvento"
+          },
+          "intensidadeEvento": {
+            "$ref": "#/components/schemas/IntensidadeEvento"
+          }
+        },
         "additionalProperties": false
       },
       "AtualizarIotInputDTO": {

@@ -15,7 +15,7 @@ namespace Events.Application.Services
 
         public EventoEntity AtualizarEvento(EventoEntity EventoEntity, string id)
         {
-            throw new NotImplementedException();
+            return _repository.AtualizarEvento(EventoEntity, id);
         }
 
         public EventoEntity DeletarEvento(string id)

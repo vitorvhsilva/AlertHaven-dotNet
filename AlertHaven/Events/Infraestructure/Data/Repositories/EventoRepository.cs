@@ -16,7 +16,14 @@ namespace Events.Infraestructure.Data.Repositories
 
         public EventoEntity AtualizarEvento(EventoEntity EventoEntity, string id)
         {
-            throw new NotImplementedException();
+            var entity = ObterEventoPorId(id);
+
+            entity.IntensidadeEvento = EventoEntity.IntensidadeEvento;
+            entity.TipoEvento = EventoEntity.TipoEvento;
+
+            _context.SaveChanges();
+
+            return entity;
         }
 
         public EventoEntity DeletarEvento(string id)

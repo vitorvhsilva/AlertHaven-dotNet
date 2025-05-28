@@ -20,9 +20,9 @@ namespace Events.Application.Services
             return _repository.AtualizarIot(IotEntity, id);
         }
 
-        public void DeletarIot(IotEntity IotEntity)
+        public IotEntity DeletarIot(string id)
         {
-            throw new NotImplementedException();
+            return _repository.DeletarIot(id);
         }
 
         public IotEntity ObterIotPorId(string Id)

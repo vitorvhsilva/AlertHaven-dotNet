@@ -30,9 +30,19 @@ namespace Events.Infraestructure.Data.Repositories
             return entity;
         }
 
-        public void DeletarIot(IotEntity IotEntity)
+        public IotEntity DeletarIot(string id)
         {
-            throw new NotImplementedException();
+            var entity = _context.IotEntities.FirstOrDefault(i => i.IdIot == id);
+
+            if (entity is null)
+            {
+                return null;
+            }
+
+            _context.IotEntities.Remove(entity);
+            _context.SaveChanges();
+
+            return entity;
         }
 
         public IotEntity ObterIotPorId(string Id)

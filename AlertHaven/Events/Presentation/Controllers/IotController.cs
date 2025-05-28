@@ -76,7 +76,11 @@ namespace Events.Presentation.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeletarIot(string id)
         {
-            return Ok();
+            var entity = _iotService.DeletarIot(id);
+            if (entity is null)
+                return NotFound("Não foi possível localizar um Iot com esse Id");
+
+            return NoContent();
         }
     }
 }

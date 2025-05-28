@@ -62,6 +62,12 @@ namespace Events.Presentation.Controllers
         {
             var iot = _mapper.Map<AtualizarIotInputDTO, IotEntity>(dto);
             var entity = _iotService.AtualizarIot(iot, id);
+
+            if (entity is null)
+            {
+                return NotFound("Não foi possível localizar um Iot com esse Id");
+            }
+
             var output = _mapper.Map<IotEntity, PersistirIotOutputDTO>(entity);
 
             return Ok(output);

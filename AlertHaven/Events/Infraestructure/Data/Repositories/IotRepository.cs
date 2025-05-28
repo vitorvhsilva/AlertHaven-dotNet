@@ -17,6 +17,11 @@ namespace Events.Infraestructure.Data.Repositories
         {
             var entity = ObterIotPorId(id);
 
+            if (entity is null)
+            {
+                return null;
+            }
+
             entity.TipoIot = IotEntity.TipoIot;
             entity.UnidadeMedidaIot = IotEntity.UnidadeMedidaIot;
 

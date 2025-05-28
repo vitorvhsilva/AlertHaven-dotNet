@@ -32,7 +32,7 @@ namespace Events.Application.Services
 
         public IEnumerable<IotEntity> ObterTodosOsIots()
         {
-            throw new NotImplementedException();
+            return _repository.ObterTodosOsIots();
         }
 
         public IotEntity PersistirIot(IotEntity IotEntity)

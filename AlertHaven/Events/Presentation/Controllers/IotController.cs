@@ -23,7 +23,11 @@ namespace Events.Presentation.Controllers
         [HttpGet]
         public IActionResult ObterTodosOsIots()
         {
-            return Ok();
+            var entitys = _iotService.ObterTodosOsIots();
+
+            var output = _mapper.Map<IEnumerable<IotEntity>, IEnumerable<ObterIotSimplesDTO>>(entitys);
+
+            return Ok(output);
         }
 
         //ObterIotCompletoDTO

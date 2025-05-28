@@ -30,7 +30,7 @@ namespace Events.Infraestructure.Data.Repositories
 
         public IEnumerable<IotEntity> ObterTodosOsIots()
         {
-            throw new NotImplementedException();
+            return _context.IotEntities.ToList();
         }
 
         public IotEntity PersistirIot(IotEntity IotEntity)

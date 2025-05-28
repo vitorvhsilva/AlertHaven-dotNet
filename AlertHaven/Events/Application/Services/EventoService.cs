@@ -25,12 +25,12 @@ namespace Events.Application.Services
 
         public EventoEntity ObterEventoPorId(string Id)
         {
-            throw new NotImplementedException();
+            return _repository.ObterEventoPorId(Id);
         }
 
         public IEnumerable<EventoEntity> ObterTodosOsEventos()
         {
-            throw new NotImplementedException();
+            return _repository.ObterTodosOsEventos();
         }
 
         public IEnumerable<EventoEntity> ObterTodosOsEventosPorIot(string IdIot)

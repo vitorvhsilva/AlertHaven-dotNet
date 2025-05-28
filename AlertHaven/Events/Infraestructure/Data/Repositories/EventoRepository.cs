@@ -47,7 +47,7 @@ namespace Events.Infraestructure.Data.Repositories
 
         public IEnumerable<EventoEntity> ObterTodosOsEventosPorIot(string IdIot)
         {
-            throw new NotImplementedException();
+            return _context.EventoEntities.Where(e => e.IdIot == IdIot);
         }
 
         public EventoEntity PersistirEvento(EventoEntity EventoEntity)

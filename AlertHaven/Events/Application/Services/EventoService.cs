@@ -35,7 +35,7 @@ namespace Events.Application.Services
 
         public IEnumerable<EventoEntity> ObterTodosOsEventosPorIot(string IdIot)
         {
-            throw new NotImplementedException();
+            return _repository.ObterTodosOsEventosPorIot(IdIot);
         }
 
         public EventoEntity PersistirEvento(EventoEntity EventoEntity)

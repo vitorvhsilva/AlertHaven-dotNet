@@ -47,8 +47,8 @@ namespace Events.Presentation.Controllers
             return Ok(output);
         }
 
-        //ObterEventoCompletoDTO
-        [HttpGet("iot/{id}")]
+        //ObterEventoSimplesDTO
+        [HttpGet("iot/{IdIot}")]
         public IActionResult ObterTodosOsEventosPorIot(string IdIot)
         {
             var entitys = _eventoService.ObterTodosOsEventosPorIot(IdIot);

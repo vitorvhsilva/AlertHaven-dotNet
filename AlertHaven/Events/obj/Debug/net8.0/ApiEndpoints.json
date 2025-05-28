@@ -81,7 +81,7 @@
   {
     "ContainingType": "Events.Presentation.Controllers.EventoController",
     "Method": "ObterTodosOsEventosPorIot",
-    "RelativePath": "api/Evento/iot/{id}",
+    "RelativePath": "api/Evento/iot/{IdIot}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -89,11 +89,6 @@
       {
         "Name": "IdIot",
         "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "id",
-        "Type": "",
         "IsRequired": true
       }
     ],

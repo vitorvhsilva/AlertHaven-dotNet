@@ -127,7 +127,7 @@
         }
       }
     },
-    "/api/Evento/iot/{id}": {
+    "/api/Evento/iot/{IdIot}": {
       "get": {
         "tags": [
           "Evento"
@@ -135,13 +135,6 @@
         "parameters": [
           {
             "name": "IdIot",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "id",
             "in": "path",
             "required": true,
             "schema": {

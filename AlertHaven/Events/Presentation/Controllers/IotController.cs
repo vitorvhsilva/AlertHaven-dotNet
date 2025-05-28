@@ -68,7 +68,7 @@ namespace Events.Presentation.Controllers
                 return NotFound("Não foi possível localizar um Iot com esse Id");
             }
 
-            var output = _mapper.Map<IotEntity, PersistirIotOutputDTO>(entity);
+            var output = _mapper.Map<IotEntity, ObterIotCompletoDTO>(entity);
 
             return Ok(output);
         }

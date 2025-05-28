@@ -28,7 +28,7 @@ namespace Events.Infraestructure.Data.Repositories
 
         public AlertaEntity DeletarAlerta(string id)
         {
-            var entity = _context.AlertaEntities.FirstOrDefault(e => e.IdAlerta == id);
+            var entity = _context.AlertaEntities.FirstOrDefault(a => a.IdAlerta == id);
 
             if (entity is null)
             {
@@ -45,7 +45,7 @@ namespace Events.Infraestructure.Data.Repositories
         {
             try
             {
-                return _context.AlertaEntities.Where(e => e.IdAlerta == Id).Any();
+                return _context.AlertaEntities.Where(a => a.IdAlerta == Id).Any();
             }
             catch (Exception e)
             {
@@ -65,9 +65,9 @@ namespace Events.Infraestructure.Data.Repositories
             return _context.AlertaEntities.ToList();
         }
 
-        public IEnumerable<AlertaEntity> ObterTodosOsAlertasPorEvento(string IdAlerta)
+        public IEnumerable<AlertaEntity> ObterTodosOsAlertasPorEvento(string IdEvento)
         {
-            return _context.AlertaEntities.Where(a => a.IdAlerta == IdAlerta);
+            return _context.AlertaEntities.Where(a => a.IdEvento == IdEvento);
         }
 
         public AlertaEntity PersistirAlerta(AlertaEntity AlertaEntity)

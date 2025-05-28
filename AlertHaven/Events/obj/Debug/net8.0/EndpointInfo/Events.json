@@ -5,6 +5,157 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Evento": {
+      "get": {
+        "tags": [
+          "Evento"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Evento"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersistirEventoInputDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersistirEventoInputDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PersistirEventoInputDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Evento/{id}": {
+      "get": {
+        "tags": [
+          "Evento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Evento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarEventoInputDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarEventoInputDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AtualizarEventoInputDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Evento"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Evento/iot/{id}": {
+      "get": {
+        "tags": [
+          "Evento"
+        ],
+        "parameters": [
+          {
+            "name": "IdIot",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Iot": {
       "get": {
         "tags": [
@@ -130,6 +281,10 @@
   },
   "components": {
     "schemas": {
+      "AtualizarEventoInputDTO": {
+        "type": "object",
+        "additionalProperties": false
+      },
       "AtualizarIotInputDTO": {
         "type": "object",
         "properties": {
@@ -138,6 +293,43 @@
           },
           "unidadeMedidaIot": {
             "$ref": "#/components/schemas/UnidadeMedidaIot"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IntensidadeEvento": {
+        "enum": [
+          "BAIXO",
+          "MEDIO",
+          "ALTO",
+          "CRITICO"
+        ],
+        "type": "string"
+      },
+      "PersistirEventoInputDTO": {
+        "type": "object",
+        "properties": {
+          "idIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoEvento": {
+            "$ref": "#/components/schemas/TipoEvento"
+          },
+          "intensidadeEvento": {
+            "$ref": "#/components/schemas/IntensidadeEvento"
+          },
+          "latitudeEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitudeEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataHoraEvento": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
@@ -153,6 +345,16 @@
           }
         },
         "additionalProperties": false
+      },
+      "TipoEvento": {
+        "enum": [
+          "ALAGAMENTO",
+          "TEMPESTADE",
+          "TORNADO",
+          "ONDA_DE_CALOR",
+          "TERREMOTO"
+        ],
+        "type": "string"
       },
       "TipoIot": {
         "enum": [

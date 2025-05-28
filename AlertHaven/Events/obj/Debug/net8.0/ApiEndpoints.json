@@ -1,5 +1,105 @@
 [
   {
+    "ContainingType": "Events.Presentation.Controllers.EventoController",
+    "Method": "ObterTodosOsEventos",
+    "RelativePath": "api/Evento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.EventoController",
+    "Method": "PersistirEvento",
+    "RelativePath": "api/Evento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Events.Application.Dto.Evento.PersistirEventoInputDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.EventoController",
+    "Method": "ObterEventoPorId",
+    "RelativePath": "api/Evento/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.EventoController",
+    "Method": "AtualizarEvento",
+    "RelativePath": "api/Evento/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Events.Application.Dto.Evento.AtualizarEventoInputDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.EventoController",
+    "Method": "DeletarEvento",
+    "RelativePath": "api/Evento/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Events.Presentation.Controllers.EventoController",
+    "Method": "ObterTodosOsEventosPorIot",
+    "RelativePath": "api/Evento/iot/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdIot",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Events.Presentation.Controllers.IotController",
     "Method": "ObterTodosOsIots",
     "RelativePath": "api/Iot",
@@ -19,7 +119,7 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Events.Application.Dto.PersistirIotInputDTO",
+        "Type": "Events.Application.Dto.Iot.PersistirIotInputDTO",
         "IsRequired": true
       }
     ],
@@ -56,7 +156,7 @@
       },
       {
         "Name": "dto",
-        "Type": "Events.Application.Dto.AtualizarIotInputDTO",
+        "Type": "Events.Application.Dto.Iot.AtualizarIotInputDTO",
         "IsRequired": true
       }
     ],

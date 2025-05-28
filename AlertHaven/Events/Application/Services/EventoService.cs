@@ -40,7 +40,18 @@ namespace Events.Application.Services
 
         public EventoEntity PersistirEvento(EventoEntity EventoEntity)
         {
-            throw new NotImplementedException();
+
+            string IdEvento = null;
+            do
+            {
+                IdEvento = Guid.NewGuid().ToString();
+            } while (_repository.ExisteEventoPorId(IdEvento));
+
+            EventoEntity.IdEvento = IdEvento;
+
+            var entity = _repository.PersistirEvento(EventoEntity);
+
+            return entity;
         }
     }
 }

@@ -25,12 +25,19 @@ namespace Events.Infraestructure.Data.Repositories
 
         public bool ExisteEventoPorId(string Id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.EventoEntities.Where(e => e.IdEvento == Id).Any();
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
         }
 
         public EventoEntity ObterEventoPorId(string Id)
         {
-            throw new NotImplementedException();
+            return _context.EventoEntities.FirstOrDefault(e => e.IdEvento == Id);
         }
 
         public IEnumerable<EventoEntity> ObterTodosOsEventos()
@@ -45,7 +52,10 @@ namespace Events.Infraestructure.Data.Repositories
 
         public EventoEntity PersistirEvento(EventoEntity EventoEntity)
         {
-            throw new NotImplementedException();
+            _context.EventoEntities.Add(EventoEntity);
+            _context.SaveChanges();
+
+            return ObterEventoPorId(EventoEntity.IdEvento);
         }
     }
 }

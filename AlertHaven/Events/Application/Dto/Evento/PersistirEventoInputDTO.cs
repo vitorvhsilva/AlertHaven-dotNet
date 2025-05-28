@@ -3,6 +3,11 @@
 namespace Events.Application.Dto.Evento
 {
     public record PersistirEventoInputDTO(
-
+        string IdIot,
+        TipoEvento TipoEvento,
+        IntensidadeEvento IntensidadeEvento,
+        string LatitudeEvento,
+        string LongitudeEvento,
+        DateTime DataHoraEvento
     );
 }

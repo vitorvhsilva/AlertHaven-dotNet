@@ -1,6 +1,7 @@
 ﻿using Events.Domain.Entities;
 using Events.Domain.Interface;
 using Events.Infraestructure.Data.AppData;
+using Microsoft.EntityFrameworkCore;
 
 namespace Events.Infraestructure.Data.Repositories
 {
@@ -47,7 +48,9 @@ namespace Events.Infraestructure.Data.Repositories
 
         public IotEntity ObterIotPorId(string Id)
         {
-            return _context.IotEntities.FirstOrDefault(i => i.IdIot == Id);
+            return _context.IotEntities
+                .Include(i => i.Eventos)
+                .FirstOrDefault(i => i.IdIot == Id);
         }
 
         public IEnumerable<IotEntity> ObterTodosOsIots()

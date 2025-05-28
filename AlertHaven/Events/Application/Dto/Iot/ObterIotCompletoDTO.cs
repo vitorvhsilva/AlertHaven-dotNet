@@ -1,4 +1,5 @@
-﻿using Events.Domain.Entities;
+﻿using Events.Application.Dto.Evento;
+using Events.Domain.Entities;
 using Events.Domain.Entities.Enums;
 
 namespace Events.Application.Dto.Iot
@@ -12,6 +13,6 @@ namespace Events.Application.Dto.Iot
         DateTime? DataHoraUltimaLeituraIot,
         UnidadeMedidaIot UnidadeMedidaIot,
         StatusIot? StatusIot,
-        ICollection<EventoEntity>? Eventos  
+        ICollection<EventoSimplesDTO>? Eventos  
     );
 }

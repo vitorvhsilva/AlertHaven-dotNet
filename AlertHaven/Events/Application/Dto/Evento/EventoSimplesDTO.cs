@@ -1,19 +1,16 @@
-﻿using Events.Application.Dto.Alerta;
-using Events.Application.Dto.Iot;
+﻿using Events.Application.Dto.Iot;
 using Events.Domain.Entities;
 using Events.Domain.Entities.Enums;
 
 namespace Events.Application.Dto.Evento
 {
-    public record ObterEventoCompletoDTO(
+    public record EventoSimplesDTO(
         string IdEvento,
         string IdIot,
         TipoEvento TipoEvento,
         IntensidadeEvento IntensidadeEvento,
         string LatitudeEvento,
         string LongitudeEvento,
-        DateTime DataHoraEvento,
-        ICollection<AlertaSimplesDTO> Alertas,
-        IotSimplesDTO Iot
+        DateTime DataHoraEvento
     );
 }

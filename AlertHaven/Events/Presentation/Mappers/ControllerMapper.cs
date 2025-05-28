@@ -10,6 +10,8 @@ namespace Events.Presentation.Mappers
         {
             CreateMap<PersistirIotInputDTO, IotEntity>();
             CreateMap<IotEntity, PersistirIotOutputDTO>();
+            CreateMap<IotEntity, ObterIotCompletoDTO>();
+            CreateMap<IotEntity, ObterIotSimplesDTO>();
              
         }
     }

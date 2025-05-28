@@ -28,9 +28,17 @@ namespace Events.Presentation.Controllers
 
         //ObterIotCompletoDTO
         [HttpGet("{id}")]
-        public IActionResult ObterIotPorId(int id)
+        public IActionResult ObterIotPorId(string id)
         {
-            return Ok();
+            var entity = _iotService.ObterIotPorId(id);
+            var output = _mapper.Map<IotEntity, ObterIotCompletoDTO>(entity);
+
+            if (output is null)
+            {
+                return NotFound("Não foi possível localizar um Iot com esse Id");
+            }
+
+            return Ok(output);
         }
 
         //PersistirIotOutputDTO

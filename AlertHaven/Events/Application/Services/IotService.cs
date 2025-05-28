@@ -27,7 +27,7 @@ namespace Events.Application.Services
 
         public IotEntity ObterIotPorId(string Id)
         {
-            throw new NotImplementedException();
+            return _repository.ObterIotPorId(Id);
         }
 
         public IEnumerable<IotEntity> ObterTodosOsIots()

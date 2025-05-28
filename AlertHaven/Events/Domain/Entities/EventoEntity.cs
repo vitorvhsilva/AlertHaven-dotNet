@@ -10,6 +10,9 @@ namespace Events.Domain.Entities
         [Key]
         [Column(TypeName = "VARCHAR2(255)")]
         public string IdEvento { get; set; }
+        [ForeignKey("Iot")]
+        [Column(TypeName = "VARCHAR2(255)")]
+        public string IdIot { get; set; }
         [Column(TypeName = "VARCHAR2(255)")]
         public TipoEvento TipoEvento { get; set; }
         [Column(TypeName = "VARCHAR2(255)")]

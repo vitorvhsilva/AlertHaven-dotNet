@@ -10,6 +10,9 @@ namespace Events.Domain.Entities
         [Key]
         [Column(TypeName = "VARCHAR2(255)")]
         public string IdAlerta { get; set; }
+        [ForeignKey("Evento")]
+        [Column(TypeName = "VARCHAR2(255)")]
+        public string IdEvento { get; set; }
         [Column(TypeName = "VARCHAR2(255)")]
         public NivelAlerta NivelAlerta { get; set; }
         [Column(TypeName = "VARCHAR2(255)")]

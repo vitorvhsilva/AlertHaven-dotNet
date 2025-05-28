@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Events.Domain.Entities;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Events.Presentation.Controllers
 {
@@ -6,31 +7,39 @@ namespace Events.Presentation.Controllers
     [ApiController]
     public class IotController : ControllerBase
     {
+
+        //IEnumerable<ObterIotSimplesDTO>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult ObterTodosOsIots()
         {
-            return new string[] { "value1", "value2" };
+            return Ok();
         }
 
+        //ObterIotCompletoDTO
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult ObterIotPorId(int id)
         {
-            return "value";
+            return Ok();
         }
 
+        //PersistirIotOutputDTO
         [HttpPost]
-        public void Post([FromBody]string value)
+        public IActionResult PersistirIot([FromBody]string value)
         {
+            return Ok();
         }
 
+        //AtualizarIotOutputDTO
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        public IActionResult AtualizarIot(int id, [FromBody]string value)
         {
+            return Ok();
         }
 
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult DeletarIot(int id)
         {
+            return Ok();
         }
     }
 }

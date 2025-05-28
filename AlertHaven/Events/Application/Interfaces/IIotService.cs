@@ -1,7 +1,14 @@
-﻿namespace Events.Application.Interfaces
+﻿using Events.Domain.Entities;
+using Events.Domain.Entities.Enums;
+
+namespace Events.Application.Interfaces
 {
     public interface IIotService
     {
-
+        IotEntity ObterIotPorId(string Id); 
+        IEnumerable<IotEntity> ObterTodosOsIots(); 
+        IotEntity PersistirIot(IotEntity IotEntity); 
+        IotEntity AtualizarIot(IotEntity IotEntity); 
+        void DeletarIot(IotEntity IotEntity); 
     }
 }

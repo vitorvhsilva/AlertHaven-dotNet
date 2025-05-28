@@ -3,6 +3,8 @@ using Events.Application.Dto.Iot;
 using Events.Application.Interfaces;
 using Events.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
+using System.Net;
 
 namespace Events.Presentation.Controllers
 {
@@ -19,8 +21,13 @@ namespace Events.Presentation.Controllers
             _iotService = iotService;
         }
 
-        //IEnumerable<ObterIotSimplesDTO>
+        [SwaggerOperation(
+            Summary = "Listar todos os dispositivos IoT",
+            Description = "Retorna uma lista simplificada de todos os dispositivos IoT cadastrados"
+        )]
+        [SwaggerResponse(200, "Lista de dispositivos IoT obtida com sucesso", typeof(IEnumerable<ObterIotSimplesDTO>))]
         [HttpGet]
+        //IEnumerable<ObterIotSimplesDTO>
         public IActionResult ObterTodosOsIots()
         {
             var entitys = _iotService.ObterTodosOsIots();
@@ -30,8 +37,14 @@ namespace Events.Presentation.Controllers
             return Ok(output);
         }
 
-        //ObterIotCompletoDTO
+        [SwaggerOperation(
+            Summary = "Obter dispositivo IoT completo",
+            Description = "Retorna todos os detalhes de um dispositivo IoT específico"
+        )]
+        [SwaggerResponse(200, "Dispositivo IoT encontrado com sucesso", typeof(ObterIotCompletoDTO))]
+        [SwaggerResponse(404, "Dispositivo IoT não encontrado")]
         [HttpGet("{id}")]
+        //ObterIotCompletoDTO
         public IActionResult ObterIotPorId(string id)
         {
             var entity = _iotService.ObterIotPorId(id);
@@ -45,11 +58,17 @@ namespace Events.Presentation.Controllers
             return Ok(output);
         }
 
-        //PersistirIotOutputDTO
+        [SwaggerOperation(
+            Summary = "Cadastrar novo dispositivo IoT",
+            Description = "Cria um novo dispositivo IoT no sistema"
+        )]
+        [SwaggerResponse(201, "Dispositivo IoT criado com sucesso", typeof(PersistirIotOutputDTO))]
+        [SwaggerResponse(400, "Dados inválidos fornecidos")]
         [HttpPost]
+        //PersistirIotOutputDTO
         public IActionResult PersistirIot([FromBody] PersistirIotInputDTO dto)
         {
-            if (!ModelState.IsValid) 
+            if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
@@ -58,11 +77,18 @@ namespace Events.Presentation.Controllers
             var entity = _iotService.PersistirIot(iot);
             var output = _mapper.Map<IotEntity, PersistirIotOutputDTO>(entity);
 
-            return CreatedAtAction(nameof(ObterIotPorId), new { IdIot = output.IdIot}, output);
+            return CreatedAtAction(nameof(ObterIotPorId), new { IdIot = output.IdIot }, output);
         }
 
-        //ObterIotCompletoDTO
+        [SwaggerOperation(
+            Summary = "Atualizar dispositivo IoT",
+            Description = "Atualiza as informações de um dispositivo IoT existente"
+        )]
+        [SwaggerResponse(200, "Dispositivo IoT atualizado com sucesso", typeof(ObterIotCompletoDTO))]
+        [SwaggerResponse(400, "Dados inválidos fornecidos")]
+        [SwaggerResponse(404, "Dispositivo IoT não encontrado")]
         [HttpPatch("{id}")]
+        //ObterIotCompletoDTO
         public IActionResult AtualizarIot(string id, [FromBody] AtualizarIotInputDTO dto)
         {
             if (!ModelState.IsValid)
@@ -83,6 +109,12 @@ namespace Events.Presentation.Controllers
             return Ok(output);
         }
 
+        [SwaggerOperation(
+            Summary = "Remover dispositivo IoT",
+            Description = "Exclui permanentemente um dispositivo IoT do sistema"
+        )]
+        [SwaggerResponse(204, "Dispositivo IoT removido com sucesso")]
+        [SwaggerResponse(404, "Dispositivo IoT não encontrado")]
         [HttpDelete("{id}")]
         public IActionResult DeletarIot(string id)
         {

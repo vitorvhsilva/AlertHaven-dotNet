@@ -10,9 +10,37 @@
         "tags": [
           "Alerta"
         ],
+        "summary": "Obter todos os alertas",
+        "description": "Retorna uma lista simplificada de todos os alertas cadastrados",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Lista de alertas obtida com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterAlertaSimplesDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterAlertaSimplesDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterAlertaSimplesDTO"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -20,6 +48,8 @@
         "tags": [
           "Alerta"
         ],
+        "summary": "Criar novo alerta",
+        "description": "Persiste um novo alerta no sistema",
         "requestBody": {
           "content": {
             "application/json": {
@@ -40,8 +70,28 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Alerta criado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersistirAlertaOutputDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersistirAlertaOutputDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersistirAlertaOutputDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Dados inválidos fornecidos"
           }
         }
       }
@@ -51,6 +101,8 @@
         "tags": [
           "Alerta"
         ],
+        "summary": "Obter alerta completo por ID",
+        "description": "Retorna todos os detalhes de um alerta específico",
         "parameters": [
           {
             "name": "id",
@@ -63,7 +115,27 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Alerta encontrado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterAlertaCompletoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterAlertaCompletoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterAlertaCompletoDTO"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Alerta não encontrado"
           }
         }
       },
@@ -71,6 +143,8 @@
         "tags": [
           "Alerta"
         ],
+        "summary": "Atualizar alerta",
+        "description": "Atualiza as informações de um alerta existente",
         "parameters": [
           {
             "name": "id",
@@ -102,7 +176,30 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Alerta atualizado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterAlertaCompletoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterAlertaCompletoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterAlertaCompletoDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Dados inválidos fornecidos"
+          },
+          "404": {
+            "description": "Alerta não encontrado"
           }
         }
       },
@@ -110,6 +207,8 @@
         "tags": [
           "Alerta"
         ],
+        "summary": "Excluir alerta",
+        "description": "Remove permanentemente um alerta do sistema",
         "parameters": [
           {
             "name": "id",
@@ -121,8 +220,11 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "Alerta excluído com sucesso"
+          },
+          "404": {
+            "description": "Alerta não encontrado"
           }
         }
       }
@@ -132,6 +234,8 @@
         "tags": [
           "Alerta"
         ],
+        "summary": "Obter alertas por evento",
+        "description": "Retorna alertas simplificados associados a um evento",
         "parameters": [
           {
             "name": "IdEvento",
@@ -144,7 +248,33 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Alertas encontrados com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterAlertaSimplesDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterAlertaSimplesDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterAlertaSimplesDTO"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -154,9 +284,37 @@
         "tags": [
           "Evento"
         ],
+        "summary": "Listar todos os eventos",
+        "description": "Retorna uma lista simplificada de todos os eventos cadastrados",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Lista de eventos obtida com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterEventoSimplesDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterEventoSimplesDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterEventoSimplesDTO"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -164,6 +322,8 @@
         "tags": [
           "Evento"
         ],
+        "summary": "Criar novo evento",
+        "description": "Cadastra um novo evento no sistema",
         "requestBody": {
           "content": {
             "application/json": {
@@ -184,8 +344,28 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Evento criado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersistirEventoOutputDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersistirEventoOutputDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersistirEventoOutputDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Dados inválidos fornecidos"
           }
         }
       }
@@ -195,6 +375,8 @@
         "tags": [
           "Evento"
         ],
+        "summary": "Obter evento completo",
+        "description": "Retorna todos os detalhes de um evento específico",
         "parameters": [
           {
             "name": "id",
@@ -207,7 +389,27 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Evento encontrado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterEventoCompletoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterEventoCompletoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterEventoCompletoDTO"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Evento não encontrado"
           }
         }
       },
@@ -215,6 +417,8 @@
         "tags": [
           "Evento"
         ],
+        "summary": "Atualizar evento",
+        "description": "Atualiza as informações de um evento existente",
         "parameters": [
           {
             "name": "id",
@@ -246,7 +450,30 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Evento atualizado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterEventoCompletoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterEventoCompletoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterEventoCompletoDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Dados inválidos fornecidos"
+          },
+          "404": {
+            "description": "Evento não encontrado"
           }
         }
       },
@@ -254,6 +481,8 @@
         "tags": [
           "Evento"
         ],
+        "summary": "Excluir evento",
+        "description": "Remove permanentemente um evento do sistema",
         "parameters": [
           {
             "name": "id",
@@ -265,8 +494,11 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "Evento excluído com sucesso"
+          },
+          "404": {
+            "description": "Evento não encontrado"
           }
         }
       }
@@ -276,6 +508,8 @@
         "tags": [
           "Evento"
         ],
+        "summary": "Listar eventos por IoT",
+        "description": "Retorna eventos associados a um dispositivo IoT específico",
         "parameters": [
           {
             "name": "IdIot",
@@ -288,7 +522,33 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Eventos encontrados com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterEventoSimplesDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterEventoSimplesDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterEventoSimplesDTO"
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -298,9 +558,37 @@
         "tags": [
           "Iot"
         ],
+        "summary": "Listar todos os dispositivos IoT",
+        "description": "Retorna uma lista simplificada de todos os dispositivos IoT cadastrados",
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Lista de dispositivos IoT obtida com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterIotSimplesDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterIotSimplesDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ObterIotSimplesDTO"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -308,6 +596,8 @@
         "tags": [
           "Iot"
         ],
+        "summary": "Cadastrar novo dispositivo IoT",
+        "description": "Cria um novo dispositivo IoT no sistema",
         "requestBody": {
           "content": {
             "application/json": {
@@ -328,8 +618,28 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Dispositivo IoT criado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersistirIotOutputDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersistirIotOutputDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersistirIotOutputDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Dados inválidos fornecidos"
           }
         }
       }
@@ -339,6 +649,8 @@
         "tags": [
           "Iot"
         ],
+        "summary": "Obter dispositivo IoT completo",
+        "description": "Retorna todos os detalhes de um dispositivo IoT específico",
         "parameters": [
           {
             "name": "id",
@@ -351,7 +663,27 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Dispositivo IoT encontrado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterIotCompletoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterIotCompletoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterIotCompletoDTO"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Dispositivo IoT não encontrado"
           }
         }
       },
@@ -359,6 +691,8 @@
         "tags": [
           "Iot"
         ],
+        "summary": "Atualizar dispositivo IoT",
+        "description": "Atualiza as informações de um dispositivo IoT existente",
         "parameters": [
           {
             "name": "id",
@@ -390,7 +724,30 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Dispositivo IoT atualizado com sucesso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterIotCompletoDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterIotCompletoDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObterIotCompletoDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Dados inválidos fornecidos"
+          },
+          "404": {
+            "description": "Dispositivo IoT não encontrado"
           }
         }
       },
@@ -398,6 +755,8 @@
         "tags": [
           "Iot"
         ],
+        "summary": "Remover dispositivo IoT",
+        "description": "Exclui permanentemente um dispositivo IoT do sistema",
         "parameters": [
           {
             "name": "id",
@@ -409,8 +768,11 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "Dispositivo IoT removido com sucesso"
+          },
+          "404": {
+            "description": "Dispositivo IoT não encontrado"
           }
         }
       }
@@ -418,6 +780,31 @@
   },
   "components": {
     "schemas": {
+      "AlertaEntityDTO": {
+        "type": "object",
+        "properties": {
+          "idAlerta": {
+            "type": "string",
+            "nullable": true
+          },
+          "idEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "nivelAlerta": {
+            "$ref": "#/components/schemas/NivelAlerta"
+          },
+          "mensagemAlerta": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataHoraAlerta": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
       "AtualizarAlertaInputDTO": {
         "type": "object",
         "properties": {
@@ -455,6 +842,38 @@
         },
         "additionalProperties": false
       },
+      "EventoEntityDTO": {
+        "type": "object",
+        "properties": {
+          "idEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "idIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoEvento": {
+            "$ref": "#/components/schemas/TipoEvento"
+          },
+          "intensidadeEvento": {
+            "$ref": "#/components/schemas/IntensidadeEvento"
+          },
+          "latitudeEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitudeEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataHoraEvento": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
       "IntensidadeEvento": {
         "enum": [
           "BAIXO",
@@ -463,6 +882,41 @@
           "CRITICO"
         ],
         "type": "string"
+      },
+      "IotEntityDTO": {
+        "type": "object",
+        "properties": {
+          "idIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoIot": {
+            "$ref": "#/components/schemas/TipoIot"
+          },
+          "latitudeIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitudeIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "ultimaLeituraIot": {
+            "type": "number",
+            "format": "double"
+          },
+          "dataHoraUltimaLeituraIot": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "unidadeMedidaIot": {
+            "$ref": "#/components/schemas/UnidadeMedidaIot"
+          },
+          "statusIot": {
+            "$ref": "#/components/schemas/StatusIot"
+          }
+        },
+        "additionalProperties": false
       },
       "NivelAlerta": {
         "enum": [
@@ -473,9 +927,214 @@
         ],
         "type": "string"
       },
+      "ObterAlertaCompletoDTO": {
+        "type": "object",
+        "properties": {
+          "idAlerta": {
+            "type": "string",
+            "nullable": true
+          },
+          "idEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "nivelAlerta": {
+            "$ref": "#/components/schemas/NivelAlerta"
+          },
+          "mensagemAlerta": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataHoraAlerta": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "evento": {
+            "$ref": "#/components/schemas/EventoEntityDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ObterAlertaSimplesDTO": {
+        "type": "object",
+        "properties": {
+          "idAlerta": {
+            "type": "string",
+            "nullable": true
+          },
+          "idEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "nivelAlerta": {
+            "$ref": "#/components/schemas/NivelAlerta"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ObterEventoCompletoDTO": {
+        "type": "object",
+        "properties": {
+          "idEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "idIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoEvento": {
+            "$ref": "#/components/schemas/TipoEvento"
+          },
+          "intensidadeEvento": {
+            "$ref": "#/components/schemas/IntensidadeEvento"
+          },
+          "latitudeEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitudeEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataHoraEvento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "alertas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AlertaEntityDTO"
+            },
+            "nullable": true
+          },
+          "iot": {
+            "$ref": "#/components/schemas/IotEntityDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ObterEventoSimplesDTO": {
+        "type": "object",
+        "properties": {
+          "idEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "idIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoEvento": {
+            "$ref": "#/components/schemas/TipoEvento"
+          },
+          "intensidadeEvento": {
+            "$ref": "#/components/schemas/IntensidadeEvento"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ObterIotCompletoDTO": {
+        "type": "object",
+        "properties": {
+          "idIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoIot": {
+            "$ref": "#/components/schemas/TipoIot"
+          },
+          "latitudeIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitudeIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "ultimaLeituraIot": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dataHoraUltimaLeituraIot": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "unidadeMedidaIot": {
+            "$ref": "#/components/schemas/UnidadeMedidaIot"
+          },
+          "statusIot": {
+            "$ref": "#/components/schemas/StatusIot"
+          },
+          "eventos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/EventoEntityDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ObterIotSimplesDTO": {
+        "type": "object",
+        "properties": {
+          "idIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoIot": {
+            "$ref": "#/components/schemas/TipoIot"
+          },
+          "latitudeIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitudeIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "ultimaLeituraIot": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "unidadeMedidaIot": {
+            "$ref": "#/components/schemas/UnidadeMedidaIot"
+          }
+        },
+        "additionalProperties": false
+      },
       "PersistirAlertaInputDTO": {
         "type": "object",
         "properties": {
+          "idEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "nivelAlerta": {
+            "$ref": "#/components/schemas/NivelAlerta"
+          },
+          "mensagemAlerta": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataHoraAlerta": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PersistirAlertaOutputDTO": {
+        "type": "object",
+        "properties": {
+          "idAlerta": {
+            "type": "string",
+            "nullable": true
+          },
           "idEvento": {
             "type": "string",
             "nullable": true
@@ -522,6 +1181,38 @@
         },
         "additionalProperties": false
       },
+      "PersistirEventoOutputDTO": {
+        "type": "object",
+        "properties": {
+          "idEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "idIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoEvento": {
+            "$ref": "#/components/schemas/TipoEvento"
+          },
+          "intensidadeEvento": {
+            "$ref": "#/components/schemas/IntensidadeEvento"
+          },
+          "latitudeEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitudeEvento": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataHoraEvento": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
       "PersistirIotInputDTO": {
         "type": "object",
         "properties": {
@@ -533,6 +1224,45 @@
           }
         },
         "additionalProperties": false
+      },
+      "PersistirIotOutputDTO": {
+        "type": "object",
+        "properties": {
+          "idIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoIot": {
+            "$ref": "#/components/schemas/TipoIot"
+          },
+          "latitudeIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitudeIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "ultimaLeituraIot": {
+            "type": "number",
+            "format": "double"
+          },
+          "dataHoraUltimaLeituraIot": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "unidadeMedidaIot": {
+            "$ref": "#/components/schemas/UnidadeMedidaIot"
+          }
+        },
+        "additionalProperties": false
+      },
+      "StatusIot": {
+        "enum": [
+          "ATIVO",
+          "INATIVO"
+        ],
+        "type": "string"
       },
       "TipoEvento": {
         "enum": [

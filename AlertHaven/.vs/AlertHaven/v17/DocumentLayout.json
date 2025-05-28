@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\presentation\\controllers\\iotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\presentation\\controllers\\iotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\presentation\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\presentation\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\presentation\\controllers\\alertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\presentation\\controllers\\alertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\infraestructure\\data\\repositories\\alertarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\infraestructure\\data\\repositories\\alertarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\application\\dto\\alerta\\persistiralertainputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\application\\dto\\alerta\\persistiralertainputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\presentation\\controllers\\alertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\presentation\\controllers\\alertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\application\\dto\\alerta\\persistiralertaoutputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,10 +51,6 @@
       "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\domain\\interface\\ialertarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\presentation\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\presentation\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\application\\dto\\alerta\\atualizaralertainputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\application\\dto\\alerta\\atualizaralertainputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -61,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\presentation\\controllers\\iotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\presentation\\controllers\\iotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\application\\dto\\iot\\persistiriotinputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -154,7 +158,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -167,6 +171,123 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Events\\Presentation\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Events\\Presentation\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T22:57:24.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AlertaService.cs",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Services\\AlertaService.cs",
+              "RelativeDocumentMoniker": "Events\\Application\\Services\\AlertaService.cs",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Services\\AlertaService.cs",
+              "RelativeToolTip": "Events\\Application\\Services\\AlertaService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwCUAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T22:42:29.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AlertaRepository.cs",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Infraestructure\\Data\\Repositories\\AlertaRepository.cs",
+              "RelativeDocumentMoniker": "Events\\Infraestructure\\Data\\Repositories\\AlertaRepository.cs",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Infraestructure\\Data\\Repositories\\AlertaRepository.cs",
+              "RelativeToolTip": "Events\\Infraestructure\\Data\\Repositories\\AlertaRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T22:39:34.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AtualizarAlertaInputDTO.cs",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Alerta\\AtualizarAlertaInputDTO.cs",
+              "RelativeDocumentMoniker": "Events\\Application\\Dto\\Alerta\\AtualizarAlertaInputDTO.cs",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Alerta\\AtualizarAlertaInputDTO.cs",
+              "RelativeToolTip": "Events\\Application\\Dto\\Alerta\\AtualizarAlertaInputDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T22:16:41.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IAlertaRepository.cs",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Domain\\Interface\\IAlertaRepository.cs",
+              "RelativeDocumentMoniker": "Events\\Domain\\Interface\\IAlertaRepository.cs",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Domain\\Interface\\IAlertaRepository.cs",
+              "RelativeToolTip": "Events\\Domain\\Interface\\IAlertaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T22:09:55.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventoController.cs",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\EventoController.cs",
+              "RelativeDocumentMoniker": "Events\\Presentation\\Controllers\\EventoController.cs",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\EventoController.cs",
+              "RelativeToolTip": "Events\\Presentation\\Controllers\\EventoController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwB8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T20:35:05.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlertaController.cs",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\AlertaController.cs",
+              "RelativeDocumentMoniker": "Events\\Presentation\\Controllers\\AlertaController.cs",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\AlertaController.cs",
+              "RelativeToolTip": "Events\\Presentation\\Controllers\\AlertaController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwB0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T22:07:06.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ObterAlertaSimplesDTO.cs",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Alerta\\ObterAlertaSimplesDTO.cs",
+              "RelativeDocumentMoniker": "Events\\Application\\Dto\\Alerta\\ObterAlertaSimplesDTO.cs",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Alerta\\ObterAlertaSimplesDTO.cs",
+              "RelativeToolTip": "Events\\Application\\Dto\\Alerta\\ObterAlertaSimplesDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T22:14:06.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IotController.cs",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\IotController.cs",
+              "RelativeDocumentMoniker": "Events\\Presentation\\Controllers\\IotController.cs",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\IotController.cs*",
+              "RelativeToolTip": "Events\\Presentation\\Controllers\\IotController.cs*",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowB0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T21:14:27.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "NivelAlerta.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Domain\\Entities\\Enums\\NivelAlerta.cs",
               "RelativeDocumentMoniker": "Events\\Domain\\Entities\\Enums\\NivelAlerta.cs",
@@ -180,97 +301,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AlertaService.cs",
-              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Services\\AlertaService.cs",
-              "RelativeDocumentMoniker": "Events\\Application\\Services\\AlertaService.cs",
-              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Services\\AlertaService.cs",
-              "RelativeToolTip": "Events\\Application\\Services\\AlertaService.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAIwCUAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T22:42:29.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AlertaRepository.cs",
-              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Infraestructure\\Data\\Repositories\\AlertaRepository.cs",
-              "RelativeDocumentMoniker": "Events\\Infraestructure\\Data\\Repositories\\AlertaRepository.cs",
-              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Infraestructure\\Data\\Repositories\\AlertaRepository.cs*",
-              "RelativeToolTip": "Events\\Infraestructure\\Data\\Repositories\\AlertaRepository.cs*",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwD0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T22:39:34.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AtualizarAlertaInputDTO.cs",
-              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Alerta\\AtualizarAlertaInputDTO.cs",
-              "RelativeDocumentMoniker": "Events\\Application\\Dto\\Alerta\\AtualizarAlertaInputDTO.cs",
-              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Alerta\\AtualizarAlertaInputDTO.cs",
-              "RelativeToolTip": "Events\\Application\\Dto\\Alerta\\AtualizarAlertaInputDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T22:16:41.596Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IAlertaRepository.cs",
-              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Domain\\Interface\\IAlertaRepository.cs",
-              "RelativeDocumentMoniker": "Events\\Domain\\Interface\\IAlertaRepository.cs",
-              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Domain\\Interface\\IAlertaRepository.cs",
-              "RelativeToolTip": "Events\\Domain\\Interface\\IAlertaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T22:09:55.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EventoController.cs",
-              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\EventoController.cs",
-              "RelativeDocumentMoniker": "Events\\Presentation\\Controllers\\EventoController.cs",
-              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\EventoController.cs",
-              "RelativeToolTip": "Events\\Presentation\\Controllers\\EventoController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAcwFMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T20:35:05.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AlertaController.cs",
-              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\AlertaController.cs",
-              "RelativeDocumentMoniker": "Events\\Presentation\\Controllers\\AlertaController.cs",
-              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\AlertaController.cs",
-              "RelativeToolTip": "Events\\Presentation\\Controllers\\AlertaController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwDMAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T22:07:06.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ObterAlertaSimplesDTO.cs",
-              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Alerta\\ObterAlertaSimplesDTO.cs",
-              "RelativeDocumentMoniker": "Events\\Application\\Dto\\Alerta\\ObterAlertaSimplesDTO.cs",
-              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Alerta\\ObterAlertaSimplesDTO.cs",
-              "RelativeToolTip": "Events\\Application\\Dto\\Alerta\\ObterAlertaSimplesDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T22:14:06.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "PersistirAlertaInputDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Alerta\\PersistirAlertaInputDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Alerta\\PersistirAlertaInputDTO.cs",
@@ -283,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "PersistirAlertaOutputDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Alerta\\PersistirAlertaOutputDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Alerta\\PersistirAlertaOutputDTO.cs",
@@ -296,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "IotRepository.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Infraestructure\\Data\\Repositories\\IotRepository.cs",
               "RelativeDocumentMoniker": "Events\\Infraestructure\\Data\\Repositories\\IotRepository.cs",
@@ -309,7 +339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "AtualizarEventoInputDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Evento\\AtualizarEventoInputDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Evento\\AtualizarEventoInputDTO.cs",
@@ -322,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "EventoRepository.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Infraestructure\\Data\\Repositories\\EventoRepository.cs",
               "RelativeDocumentMoniker": "Events\\Infraestructure\\Data\\Repositories\\EventoRepository.cs",
@@ -335,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "EventoService.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Services\\EventoService.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Services\\EventoService.cs",
@@ -348,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Program.cs",
               "RelativeDocumentMoniker": "Events\\Program.cs",
@@ -361,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "IotService.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Services\\IotService.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Services\\IotService.cs",
@@ -374,20 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IotController.cs",
-              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\IotController.cs",
-              "RelativeDocumentMoniker": "Events\\Presentation\\Controllers\\IotController.cs",
-              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\IotController.cs",
-              "RelativeToolTip": "Events\\Presentation\\Controllers\\IotController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAwwEYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T21:14:27.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ControllerMapper.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Mappers\\ControllerMapper.cs",
               "RelativeDocumentMoniker": "Events\\Presentation\\Mappers\\ControllerMapper.cs",
@@ -400,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "ObterAlertaCompletoDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Alerta\\ObterAlertaCompletoDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Alerta\\ObterAlertaCompletoDTO.cs",
@@ -413,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "PersistirIotInputDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Iot\\PersistirIotInputDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Iot\\PersistirIotInputDTO.cs",
@@ -426,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "AtualizarIotInputDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Iot\\AtualizarIotInputDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Iot\\AtualizarIotInputDTO.cs",
@@ -439,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "PersistirEventoInputDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Evento\\PersistirEventoInputDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Evento\\PersistirEventoInputDTO.cs",
@@ -452,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "IAlertaService.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Interfaces\\IAlertaService.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Interfaces\\IAlertaService.cs",
@@ -465,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "AlertaEntity.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Domain\\Entities\\AlertaEntity.cs",
               "RelativeDocumentMoniker": "Events\\Domain\\Entities\\AlertaEntity.cs",
@@ -478,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "AlertaEntityDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Alerta\\AlertaEntityDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Alerta\\AlertaEntityDTO.cs",
@@ -491,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "IEventoService.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Interfaces\\IEventoService.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Interfaces\\IEventoService.cs",
@@ -504,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "EventoEntity.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Domain\\Entities\\EventoEntity.cs",
               "RelativeDocumentMoniker": "Events\\Domain\\Entities\\EventoEntity.cs",
@@ -517,7 +534,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "IotEntityDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Iot\\IotEntityDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Iot\\IotEntityDTO.cs",
@@ -530,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "TipoEvento.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Domain\\Entities\\Enums\\TipoEvento.cs",
               "RelativeDocumentMoniker": "Events\\Domain\\Entities\\Enums\\TipoEvento.cs",
@@ -543,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Infraestructure\\Data\\AppData\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "Events\\Infraestructure\\Data\\AppData\\ApplicationContext.cs",
@@ -556,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "ObterIotCompletoDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Iot\\ObterIotCompletoDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Iot\\ObterIotCompletoDTO.cs",
@@ -569,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "ObterEventoCompletoDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Evento\\ObterEventoCompletoDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Evento\\ObterEventoCompletoDTO.cs",
@@ -582,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "ObterEventoSimplesDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Evento\\ObterEventoSimplesDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Evento\\ObterEventoSimplesDTO.cs",
@@ -595,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "EventoEntityDTO.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Application\\Dto\\Evento\\EventoEntityDTO.cs",
               "RelativeDocumentMoniker": "Events\\Application\\Dto\\Evento\\EventoEntityDTO.cs",
@@ -608,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "20250528204400_initialMigration.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Migrations\\20250528204400_initialMigration.cs",
               "RelativeDocumentMoniker": "Events\\Migrations\\20250528204400_initialMigration.cs",
@@ -621,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "IntensidadeEvento.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Domain\\Entities\\Enums\\IntensidadeEvento.cs",
               "RelativeDocumentMoniker": "Events\\Domain\\Entities\\Enums\\IntensidadeEvento.cs",

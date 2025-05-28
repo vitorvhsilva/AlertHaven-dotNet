@@ -1,4 +1,5 @@
-﻿using Events.Domain.Entities;
+﻿using Events.Application.Dto.Iot;
+using Events.Domain.Entities;
 using Events.Domain.Entities.Enums;
 
 namespace Events.Application.Dto.Evento
@@ -12,6 +13,6 @@ namespace Events.Application.Dto.Evento
         string LongitudeEvento,
         DateTime DataHoraEvento,
         ICollection<AlertaEntity> Alertas,
-        IotEntity Iot
+        IotSimplesDTO Iot
     );
 }

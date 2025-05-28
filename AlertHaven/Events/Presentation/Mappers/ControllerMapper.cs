@@ -15,12 +15,13 @@ namespace Events.Presentation.Mappers
             CreateMap<IotEntity, ObterIotSimplesDTO>();
             CreateMap<AtualizarIotInputDTO, IotEntity>();
 
-
             CreateMap<PersistirEventoInputDTO, EventoEntity>();
             CreateMap<EventoEntity, PersistirEventoOutputDTO>();
             CreateMap<EventoEntity, ObterEventoCompletoDTO>();
             CreateMap<EventoEntity, ObterEventoSimplesDTO>();
             CreateMap<AtualizarEventoInputDTO, EventoEntity>();
+
+            CreateMap<IotEntity, IotSimplesDTO>();
         }
     }
 }

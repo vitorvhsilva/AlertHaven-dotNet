@@ -1,0 +1,63 @@
+﻿@model Events.Domain.Entities.IotEntity
+
+<div class="row">
+    <dt>
+        @Html.DisplayNameFor(model => model.IdIot)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.IdIot)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.TipoIot)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.TipoIot)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.LatitudeIot)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.LatitudeIot)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.LongitudeIot)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.LongitudeIot)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.UltimaLeituraIot)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.UltimaLeituraIot)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.DataHoraUltimaLeituraIot)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.DataHoraUltimaLeituraIot)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.UnidadeMedidaIot)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.UnidadeMedidaIot)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.StatusIot)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.StatusIot)
+    </dd>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdIot" />
+        <input type="submit" value="Deletar" class="btn btn-danger" />
+    </form>
+
+
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>

@@ -1,0 +1,64 @@
+﻿@model Events.Domain.Entities.IotEntity
+
+<div class="row">
+    <form asp-action="Edit">
+        <input type="hidden" asp-for="IdIot" />
+        <div class="form-group">
+            <label asp-for="LatitudeIot"></label>
+            <input asp-for="LatitudeIot" class="form-control" />
+            <span asp-validation-for="LatitudeIot" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="LongitudeIot"></label>
+            <input asp-for="LongitudeIot" class="form-control" />
+            <span asp-validation-for="LongitudeIot" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="UltimaLeituraIot"></label>
+            <input asp-for="UltimaLeituraIot" class="form-control" type="number" step="any" />
+            <span asp-validation-for="UltimaLeituraIot" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="TipoIot"></label>
+            <select asp-for="TipoIot"
+                    asp-items="ViewBag.Tipos"
+                    class="form-control">
+                <option value="">-- Selecione um tipo --</option>
+            </select>
+            <span asp-validation-for="TipoIot" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="UnidadeMedidaIot"></label>
+            <select asp-for="UnidadeMedidaIot"
+                    asp-items="ViewBag.UnidadesMedidas"
+                    class="form-control">
+                <option value="">-- Selecione uma unidade de medida --</option>
+            </select>
+            <span asp-validation-for="UnidadeMedidaIot" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="StatusIot"></label>
+            <select asp-for="StatusIot"
+                    asp-items="ViewBag.Status"
+                    class="form-control">
+                <option value="">-- Selecione um status --</option>
+            </select>
+            <span asp-validation-for="StatusIot" class="text-danger"></span>
+        </div>
+        <input type="hidden" asp-for="DataHoraUltimaLeituraIot" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss")" />
+        <div>
+            <input type="submit" value="Salvar" />
+        </div>
+    </form>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Events.Domain.Entities.IotEntity>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Criar Novo Alerta</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdIot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoIot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnidadeMedidaIot)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdIot)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TipoIot)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UnidadeMedidaIot)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdIot">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdIot">Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdIot">Deletar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

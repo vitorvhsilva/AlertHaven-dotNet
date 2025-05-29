@@ -70,14 +70,16 @@ public class AlertaController : Controller
     [AutoValidateAntiforgeryToken]
     public IActionResult Edit(AtualizarAlertaInputDTO dto)
     {
+        var IdIot = Request.Form["IdIot"];
+
         if (ModelState.IsValid)
         {
             var entity = _mapper.Map<AlertaEntity>(dto);
-            _service.AtualizarAlerta(entity, entity.IdAlerta);
+            _service.AtualizarAlerta(entity, IdIot);
 
             return RedirectToAction(nameof(Index));
         }
-        return View(dto);
+        return View();
     }
 
 
@@ -94,16 +96,15 @@ public class AlertaController : Controller
     [ActionName("Delete")]
     public IActionResult DeleteConfirmed(string id)
     {
-        var clientes = _service.DeletarAlerta(id);
+        var alerta = _service.DeletarAlerta(id);
 
-        if (clientes is not null)
+        if (alerta is not null)
         {
             return RedirectToAction(nameof(Index));
         }
 
         return View();
     }
-
 
     private IEnumerable<SelectListItem> ObterNiveisAlerta()
     {

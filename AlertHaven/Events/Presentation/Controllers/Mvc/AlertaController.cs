@@ -21,6 +21,13 @@ public class AlertaController : Controller
         return View(alertas);
     }
 
+    public IActionResult Details(string? id)
+    {
+        var alerta = _service.ObterAlertaPorId(id ?? "");
+
+        return View(alerta);
+    }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

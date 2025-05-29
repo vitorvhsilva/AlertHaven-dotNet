@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\views\\alerta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\views\\alerta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\domain\\entities\\alertaentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\domain\\entities\\alertaentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\views\\alerta\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\views\\alerta\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\presentation\\controllers\\mvc\\alertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\presentation\\controllers\\mvc\\alertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\presentation\\controllers\\mvc\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\presentation\\controllers\\mvc\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\domain\\entities\\alertaentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\domain\\entities\\alertaentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\presentation\\controllers\\mvc\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|solutionrelative:events\\presentation\\controllers\\mvc\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD78FE19-A72D-43ED-AA8A-F84CD37A5354}|Events\\Events.csproj|d:\\fiap\\2 ano\\gs1\\repositorio\\alerthaven\\alerthaven-dotnet\\alerthaven\\events\\presentation\\controllers\\web\\alertacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,6 +59,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Alerta\\Details.cshtml",
+              "RelativeDocumentMoniker": "Events\\Views\\Alerta\\Details.cshtml",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Alerta\\Details.cshtml",
+              "RelativeToolTip": "Events\\Views\\Alerta\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T01:05:53.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AlertaEntity.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Domain\\Entities\\AlertaEntity.cs",
               "RelativeDocumentMoniker": "Events\\Domain\\Entities\\AlertaEntity.cs",
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Events\\Views\\Home\\Index.cshtml",
@@ -86,14 +103,14 @@
               "RelativeDocumentMoniker": "Events\\Presentation\\Controllers\\Mvc\\AlertaController.cs",
               "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\Mvc\\AlertaController.cs",
               "RelativeToolTip": "Events\\Presentation\\Controllers\\Mvc\\AlertaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T00:57:45.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AlertaController.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\Web\\AlertaController.cs",
               "RelativeDocumentMoniker": "Events\\Presentation\\Controllers\\Web\\AlertaController.cs",
@@ -106,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Presentation\\Controllers\\Mvc\\HomeController.cs",
               "RelativeDocumentMoniker": "Events\\Presentation\\Controllers\\Mvc\\HomeController.cs",
@@ -119,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IotEntity.cs",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Domain\\Entities\\IotEntity.cs",
               "RelativeDocumentMoniker": "Events\\Domain\\Entities\\IotEntity.cs",
@@ -132,26 +149,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Alerta\\Index.cshtml",
               "RelativeDocumentMoniker": "Events\\Views\\Alerta\\Index.cshtml",
-              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Alerta\\Index.cshtml*",
-              "RelativeToolTip": "Events\\Views\\Alerta\\Index.cshtml*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAABHAAAAAAAAAA==",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Alerta\\Index.cshtml",
+              "RelativeToolTip": "Events\\Views\\Alerta\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-29T00:54:03.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Events\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Events\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAB3AAAAAAAAAA==",
+              "ToolTip": "D:\\FIAP\\2 ANO\\GS1\\Repositorio\\AlertHaven\\AlertHaven-dotNet\\AlertHaven\\Events\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "Events\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-29T00:46:41.821Z",
               "EditorCaption": ""

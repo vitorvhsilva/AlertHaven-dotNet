@@ -1,0 +1,32 @@
+﻿@model Events.Domain.Entities.AlertaEntity
+
+<div class="row">
+    <dt>
+        @Html.DisplayNameFor(model => model.IdAlerta)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.IdAlerta)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.NivelAlerta)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.NivelAlerta)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.MensagemAlerta)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.MensagemAlerta)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.DataHoraAlerta)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.DataHoraAlerta)
+    </dd>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>

@@ -68,14 +68,12 @@ public class AlertaController : Controller
 
     [HttpPost]
     [AutoValidateAntiforgeryToken]
-    public IActionResult Edit(AtualizarAlertaInputDTO dto)
+    public IActionResult Edit(AlertaEntity entity)
     {
-        var IdIot = Request.Form["IdIot"];
 
         if (ModelState.IsValid)
         {
-            var entity = _mapper.Map<AlertaEntity>(dto);
-            _service.AtualizarAlerta(entity, IdIot);
+            _service.AtualizarAlerta(entity, entity.IdAlerta);
 
             return RedirectToAction(nameof(Index));
         }

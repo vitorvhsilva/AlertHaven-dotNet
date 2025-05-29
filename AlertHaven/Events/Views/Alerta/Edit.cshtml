@@ -2,6 +2,9 @@
 
 <div class="row">
     <form asp-action="Edit">
+        <input type="hidden" asp-for="IdAlerta" />
+        <input type="hidden" asp-for="IdEvento" />
+        <input type="hidden" asp-for="DataHoraAlerta" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss")" /> 
         <div class="form-group">
             <label asp-for="NivelAlerta"></label>
             <select asp-for="NivelAlerta"

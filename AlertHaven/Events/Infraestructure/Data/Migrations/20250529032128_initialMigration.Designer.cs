@@ -12,7 +12,7 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace Events.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20250528204400_initialMigration")]
+    [Migration("20250529032128_initialMigration")]
     partial class initialMigration
     {
         /// <inheritdoc />
@@ -58,7 +58,7 @@ namespace Events.Migrations
                     b.Property<string>("IdEvento")
                         .HasColumnType("VARCHAR2(255)");
 
-                    b.Property<DateTime>("DataHoraEvento")
+                    b.Property<DateTime?>("DataHoraEvento")
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("IdIot")
@@ -70,11 +70,9 @@ namespace Events.Migrations
                         .HasColumnType("VARCHAR2(255)");
 
                     b.Property<string>("LatitudeEvento")
-                        .IsRequired()
                         .HasColumnType("VARCHAR2(255)");
 
                     b.Property<string>("LongitudeEvento")
-                        .IsRequired()
                         .HasColumnType("VARCHAR2(255)");
 
                     b.Property<string>("TipoEvento")

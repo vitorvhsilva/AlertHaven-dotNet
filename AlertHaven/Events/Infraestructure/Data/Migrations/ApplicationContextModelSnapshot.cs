@@ -55,7 +55,7 @@ namespace Events.Migrations
                     b.Property<string>("IdEvento")
                         .HasColumnType("VARCHAR2(255)");
 
-                    b.Property<DateTime>("DataHoraEvento")
+                    b.Property<DateTime?>("DataHoraEvento")
                         .HasColumnType("TIMESTAMP");
 
                     b.Property<string>("IdIot")
@@ -67,11 +67,9 @@ namespace Events.Migrations
                         .HasColumnType("VARCHAR2(255)");
 
                     b.Property<string>("LatitudeEvento")
-                        .IsRequired()
                         .HasColumnType("VARCHAR2(255)");
 
                     b.Property<string>("LongitudeEvento")
-                        .IsRequired()
                         .HasColumnType("VARCHAR2(255)");
 
                     b.Property<string>("TipoEvento")

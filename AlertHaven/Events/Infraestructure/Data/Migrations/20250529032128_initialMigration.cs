@@ -37,9 +37,9 @@ namespace Events.Migrations
                     IdIot = table.Column<string>(type: "VARCHAR2(255)", nullable: false),
                     TipoEvento = table.Column<string>(type: "VARCHAR2(255)", nullable: false),
                     IntensidadeEvento = table.Column<string>(type: "VARCHAR2(255)", nullable: false),
-                    LatitudeEvento = table.Column<string>(type: "VARCHAR2(255)", nullable: false),
-                    LongitudeEvento = table.Column<string>(type: "VARCHAR2(255)", nullable: false),
-                    DataHoraEvento = table.Column<DateTime>(type: "TIMESTAMP", nullable: false)
+                    LatitudeEvento = table.Column<string>(type: "VARCHAR2(255)", nullable: true),
+                    LongitudeEvento = table.Column<string>(type: "VARCHAR2(255)", nullable: true),
+                    DataHoraEvento = table.Column<DateTime>(type: "TIMESTAMP", nullable: true)
                 },
                 constraints: table =>
                 {

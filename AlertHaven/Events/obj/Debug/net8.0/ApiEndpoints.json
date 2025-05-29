@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "Events.Presentation.Controllers.AlertaController",
+    "ContainingType": "Events.Presentation.Controllers.Web.AlertaController",
     "Method": "ObterTodosOsAlertas",
     "RelativePath": "api/Alerta",
     "HttpMethod": "GET",
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.AlertaController",
+    "ContainingType": "Events.Presentation.Controllers.Web.AlertaController",
     "Method": "PersistirAlerta",
     "RelativePath": "api/Alerta",
     "HttpMethod": "POST",
@@ -51,7 +51,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.AlertaController",
+    "ContainingType": "Events.Presentation.Controllers.Web.AlertaController",
     "Method": "ObterAlertaPorId",
     "RelativePath": "api/Alerta/{id}",
     "HttpMethod": "GET",
@@ -82,7 +82,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.AlertaController",
+    "ContainingType": "Events.Presentation.Controllers.Web.AlertaController",
     "Method": "AtualizarAlerta",
     "RelativePath": "api/Alerta/{id}",
     "HttpMethod": "PATCH",
@@ -123,7 +123,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.AlertaController",
+    "ContainingType": "Events.Presentation.Controllers.Web.AlertaController",
     "Method": "DeletarAlerta",
     "RelativePath": "api/Alerta/{id}",
     "HttpMethod": "DELETE",
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.AlertaController",
+    "ContainingType": "Events.Presentation.Controllers.Web.AlertaController",
     "Method": "ObterTodosOsAlertasPorEvento",
     "RelativePath": "api/Alerta/evento/{IdEvento}",
     "HttpMethod": "GET",
@@ -176,7 +176,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.EventoController",
+    "ContainingType": "Events.Presentation.Controllers.Web.EventoController",
     "Method": "ObterTodosOsEventos",
     "RelativePath": "api/Evento",
     "HttpMethod": "GET",
@@ -196,7 +196,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.EventoController",
+    "ContainingType": "Events.Presentation.Controllers.Web.EventoController",
     "Method": "PersistirEvento",
     "RelativePath": "api/Evento",
     "HttpMethod": "POST",
@@ -227,7 +227,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.EventoController",
+    "ContainingType": "Events.Presentation.Controllers.Web.EventoController",
     "Method": "ObterEventoPorId",
     "RelativePath": "api/Evento/{id}",
     "HttpMethod": "GET",
@@ -258,7 +258,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.EventoController",
+    "ContainingType": "Events.Presentation.Controllers.Web.EventoController",
     "Method": "AtualizarEvento",
     "RelativePath": "api/Evento/{id}",
     "HttpMethod": "PATCH",
@@ -299,7 +299,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.EventoController",
+    "ContainingType": "Events.Presentation.Controllers.Web.EventoController",
     "Method": "DeletarEvento",
     "RelativePath": "api/Evento/{id}",
     "HttpMethod": "DELETE",
@@ -326,7 +326,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.EventoController",
+    "ContainingType": "Events.Presentation.Controllers.Web.EventoController",
     "Method": "ObterTodosOsEventosPorIot",
     "RelativePath": "api/Evento/iot/{IdIot}",
     "HttpMethod": "GET",
@@ -352,7 +352,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.IotController",
+    "ContainingType": "Events.Presentation.Controllers.Web.IotController",
     "Method": "ObterTodosOsIots",
     "RelativePath": "api/Iot",
     "HttpMethod": "GET",
@@ -372,7 +372,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.IotController",
+    "ContainingType": "Events.Presentation.Controllers.Web.IotController",
     "Method": "PersistirIot",
     "RelativePath": "api/Iot",
     "HttpMethod": "POST",
@@ -403,7 +403,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.IotController",
+    "ContainingType": "Events.Presentation.Controllers.Web.IotController",
     "Method": "ObterIotPorId",
     "RelativePath": "api/Iot/{id}",
     "HttpMethod": "GET",
@@ -434,7 +434,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.IotController",
+    "ContainingType": "Events.Presentation.Controllers.Web.IotController",
     "Method": "AtualizarIot",
     "RelativePath": "api/Iot/{id}",
     "HttpMethod": "PATCH",
@@ -475,7 +475,7 @@
     ]
   },
   {
-    "ContainingType": "Events.Presentation.Controllers.IotController",
+    "ContainingType": "Events.Presentation.Controllers.Web.IotController",
     "Method": "DeletarIot",
     "RelativePath": "api/Iot/{id}",
     "HttpMethod": "DELETE",

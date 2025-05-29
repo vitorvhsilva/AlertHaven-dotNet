@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Net;
 
-namespace Events.Presentation.Controllers
+namespace Events.Presentation.Controllers.Web
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -95,7 +95,7 @@ namespace Events.Presentation.Controllers
             var entity = _eventoService.PersistirEvento(iot);
             var output = _mapper.Map<EventoEntity, PersistirEventoOutputDTO>(entity);
 
-            return CreatedAtAction(nameof(ObterEventoPorId), new { IdEvento = output.IdEvento }, output);
+            return CreatedAtAction(nameof(ObterEventoPorId), new { output.IdEvento }, output);
         }
 
         [SwaggerOperation(

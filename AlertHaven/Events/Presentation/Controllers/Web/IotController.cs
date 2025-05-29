@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Net;
 
-namespace Events.Presentation.Controllers
+namespace Events.Presentation.Controllers.Web
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -77,7 +77,7 @@ namespace Events.Presentation.Controllers
             var entity = _iotService.PersistirIot(iot);
             var output = _mapper.Map<IotEntity, PersistirIotOutputDTO>(entity);
 
-            return CreatedAtAction(nameof(ObterIotPorId), new { IdIot = output.IdIot }, output);
+            return CreatedAtAction(nameof(ObterIotPorId), new { output.IdIot }, output);
         }
 
         [SwaggerOperation(

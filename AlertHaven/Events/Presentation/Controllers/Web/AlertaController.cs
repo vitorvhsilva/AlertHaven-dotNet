@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using System.Net;
 
-namespace Events.Presentation.Controllers
+namespace Events.Presentation.Controllers.Web
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -93,7 +93,7 @@ namespace Events.Presentation.Controllers
             var entity = _alertaService.PersistirAlerta(alerta);
             var output = _mapper.Map<AlertaEntity, PersistirAlertaOutputDTO>(entity);
 
-            return CreatedAtAction(nameof(ObterAlertaPorId), new { IdAlerta = output.IdAlerta }, output);
+            return CreatedAtAction(nameof(ObterAlertaPorId), new { output.IdAlerta }, output);
         }
 
         [SwaggerOperation(

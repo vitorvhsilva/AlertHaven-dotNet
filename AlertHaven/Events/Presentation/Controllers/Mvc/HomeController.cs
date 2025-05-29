@@ -2,7 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Events.Domain.Models;
 
-namespace Events.Presentation.Controllers;
+namespace Events.Presentation.Controllers.MVC;
 
 public class HomeController : Controller
 {

@@ -1,0 +1,50 @@
+﻿@model Events.Domain.Entities.EventoEntity
+
+<div class="row">
+    <dt>
+        @Html.DisplayNameFor(model => model.IdEvento)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.IdEvento)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.IdIot)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.IdIot)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.TipoEvento)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.TipoEvento)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.IntensidadeEvento)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.IntensidadeEvento)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.LatitudeEvento)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.LatitudeEvento)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.LongitudeEvento)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.LongitudeEvento)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.DataHoraEvento)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.DataHoraEvento)
+    </dd>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>

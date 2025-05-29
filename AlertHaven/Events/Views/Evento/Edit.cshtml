@@ -1,0 +1,43 @@
+﻿@model Events.Domain.Entities.EventoEntity
+
+<div class="row">
+    <form asp-action="Edit">
+        <input type="hidden" asp-for="IdEvento" />
+        <input type="hidden" asp-for="IdIot" />
+        <input type="hidden" asp-for="DataHoraEvento"/> 
+        <input type="hidden" asp-for="LatitudeEvento"/> 
+        <input type="hidden" asp-for="LongitudeEvento"/> 
+        <div class="form-group">
+            <label asp-for="TipoEvento"></label>
+            <select asp-for="TipoEvento"
+                    asp-items="ViewBag.Tipos"
+                    class="form-control">
+                <option value="">-- Selecione um tipo --</option>
+            </select>
+            <span asp-validation-for="TipoEvento" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="IntensidadeEvento"></label>
+            <select asp-for="IntensidadeEvento"
+                    asp-items="ViewBag.Intensidades"
+                    class="form-control">
+                <option value="">-- Selecione uma intensidade --</option>
+            </select>
+            <span asp-validation-for="IntensidadeEvento" class="text-danger"></span>
+        </div>
+        <div>
+            <input type="submit" value="Salvar" />
+        </div>
+    </form>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

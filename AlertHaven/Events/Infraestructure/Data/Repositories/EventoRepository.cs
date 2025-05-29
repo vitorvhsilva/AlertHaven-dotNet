@@ -18,6 +18,11 @@ namespace Events.Infraestructure.Data.Repositories
         {
             var entity = ObterEventoPorId(id);
 
+            if (entity is null)
+            {
+                return null;
+            }
+
             entity.IntensidadeEvento = EventoEntity.IntensidadeEvento;
             entity.TipoEvento = EventoEntity.TipoEvento;
 

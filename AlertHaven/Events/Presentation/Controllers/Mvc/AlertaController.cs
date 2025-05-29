@@ -47,9 +47,7 @@ public class AlertaController : Controller
     public IActionResult Create(PersistirAlertaInputDTO dto)
     {
         if (ModelState.IsValid)
-        {
-            //Salva os dados no banco
-
+        { 
             _service.PersistirAlerta(_mapper.Map<AlertaEntity>(dto));
 
             return RedirectToAction(nameof(Index));
@@ -57,6 +55,54 @@ public class AlertaController : Controller
         return View(dto);
     }
 
+    [HttpGet]
+    public IActionResult Edit(string? id)
+    {
+        var alerta = _service.ObterAlertaPorId(id ?? "");
+
+        ViewBag.Niveis = ObterNiveisAlerta();
+
+        return View(alerta);
+    }
+
+
+    [HttpPost]
+    [AutoValidateAntiforgeryToken]
+    public IActionResult Edit(AtualizarAlertaInputDTO dto)
+    {
+        if (ModelState.IsValid)
+        {
+            var entity = _mapper.Map<AlertaEntity>(dto);
+            _service.AtualizarAlerta(entity, entity.IdAlerta);
+
+            return RedirectToAction(nameof(Index));
+        }
+        return View(dto);
+    }
+
+
+    [HttpGet]
+    public IActionResult Delete(string? id)
+    {
+        var alerta = _service.ObterAlertaPorId(id ?? "");
+
+        return View(alerta);
+    }
+
+    [HttpPost]
+    [AutoValidateAntiforgeryToken]
+    [ActionName("Delete")]
+    public IActionResult DeleteConfirmed(string id)
+    {
+        var clientes = _service.DeletarAlerta(id);
+
+        if (clientes is not null)
+        {
+            return RedirectToAction(nameof(Index));
+        }
+
+        return View();
+    }
 
 
     private IEnumerable<SelectListItem> ObterNiveisAlerta()

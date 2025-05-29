@@ -24,8 +24,16 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/FIAP/2 ANO/GS1/Repositorio/AlertHaven/AlertHaven-dotNet/AlertHaven/Events/Views/Alerta/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/FIAP/2 ANO/GS1/Repositorio/AlertHaven/AlertHaven-dotNet/AlertHaven/Events/Views/Alerta/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FIAP/2 ANO/GS1/Repositorio/AlertHaven/AlertHaven-dotNet/AlertHaven/Events/Views/Alerta/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnRhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/FIAP/2 ANO/GS1/Repositorio/AlertHaven/AlertHaven-dotNet/AlertHaven/Events/Views/Alerta/Index.cshtml]

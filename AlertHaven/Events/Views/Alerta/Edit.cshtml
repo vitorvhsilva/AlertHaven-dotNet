@@ -1,12 +1,7 @@
-﻿@model Events.Application.Dto.Alerta.PersistirAlertaInputDTO
+﻿@model Events.Domain.Entities.AlertaEntity
 
 <div class="row">
     <form asp-action="Create">
-        <div class="form-group">
-            <label asp-for="IdEvento"></label>
-            <input asp-for="IdEvento" class="form-control" />
-            <span asp-validation-for="IdEvento" class="text-danger"></span>
-        </div>
         <div class="form-group">
             <label asp-for="NivelAlerta"></label>
             <select asp-for="NivelAlerta"
@@ -21,7 +16,6 @@
             <input asp-for="MensagemAlerta" class="form-control" />
             <span asp-validation-for="MensagemAlerta" class="text-danger"></span>
         </div>
-        <input type="hidden" asp-for="DataHoraAlerta" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss")" />
         <div>
             <input type="submit" value="Salvar" />
         </div>

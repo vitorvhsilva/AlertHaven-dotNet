@@ -437,7 +437,7 @@
     "ContainingType": "Events.Presentation.Controllers.Web.IotController",
     "Method": "AtualizarIot",
     "RelativePath": "api/Iot/{id}",
-    "HttpMethod": "PATCH",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [

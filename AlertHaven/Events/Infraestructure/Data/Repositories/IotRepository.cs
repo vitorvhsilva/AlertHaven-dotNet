@@ -25,6 +25,11 @@ namespace Events.Infraestructure.Data.Repositories
 
             entity.TipoIot = IotEntity.TipoIot;
             entity.UnidadeMedidaIot = IotEntity.UnidadeMedidaIot;
+            entity.LatitudeIot = IotEntity.LatitudeIot;
+            entity.LongitudeIot = IotEntity.LongitudeIot;
+            entity.UltimaLeituraIot = IotEntity.UltimaLeituraIot;
+            entity.StatusIot = IotEntity.StatusIot;
+            entity.DataHoraUltimaLeituraIot = DateTime.Now;
 
             _context.SaveChanges();
 

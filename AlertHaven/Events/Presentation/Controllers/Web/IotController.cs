@@ -87,7 +87,7 @@ namespace Events.Presentation.Controllers.Web
         [SwaggerResponse(200, "Dispositivo IoT atualizado com sucesso", typeof(ObterIotCompletoDTO))]
         [SwaggerResponse(400, "Dados inválidos fornecidos")]
         [SwaggerResponse(404, "Dispositivo IoT não encontrado")]
-        [HttpPatch("{id}")]
+        [HttpPut("{id}")]
         //ObterIotCompletoDTO
         public IActionResult AtualizarIot(string id, [FromBody] AtualizarIotInputDTO dto)
         {

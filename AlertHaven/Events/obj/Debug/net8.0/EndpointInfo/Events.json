@@ -687,7 +687,7 @@
           }
         }
       },
-      "patch": {
+      "put": {
         "tags": [
           "Iot"
         ],
@@ -833,11 +833,26 @@
       "AtualizarIotInputDTO": {
         "type": "object",
         "properties": {
+          "latitudeIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitudeIot": {
+            "type": "string",
+            "nullable": true
+          },
+          "ultimaLeituraIot": {
+            "type": "number",
+            "format": "double"
+          },
           "tipoIot": {
             "$ref": "#/components/schemas/TipoIot"
           },
           "unidadeMedidaIot": {
             "$ref": "#/components/schemas/UnidadeMedidaIot"
+          },
+          "statusIot": {
+            "$ref": "#/components/schemas/StatusIot"
           }
         },
         "additionalProperties": false

@@ -241,9 +241,262 @@ graph TD
 **Endpoint**  
 `DELETE` → `https://localhost:7217/api/iot/{IdIot}`
 
+### Evento Controller
+
+**Endpoint**  
+`GET` → `https://localhost:7217/api/evento`
+
+**Response Body**
+```json
+[
+    {
+        "idEvento": "85d0f37f-9fad-4661-be05-8db287726cad",
+        "idIot": "85383d82-7911-41c2-8629-6e0b2b72930b",
+        "tipoEvento": "ONDA_DE_CALOR",
+        "intensidadeEvento": "ALTO"
+    },
+    {
+        "idEvento": "9ff939c3-0220-4e0c-99a9-101d83eb3b71",
+        "idIot": "0014a2e9-1fa3-4627-9a83-9cb57b6248f4",
+        "tipoEvento": "TORNADO",
+        "intensidadeEvento": "ALTO"
+    },
+    {
+        "idEvento": "040f2528-7f20-4593-8512-ae711f0469a1",
+        "idIot": "0014a2e9-1fa3-4627-9a83-9cb57b6248f4",
+        "tipoEvento": "TORNADO",
+        "intensidadeEvento": "ALTO"
+    }
+]
+```
 ---
 
-### Evento Controller
+**Endpoint**  
+`POST` → `https://localhost:7217/api/evento`
+
+**Request Body**
+```json
+{
+    "IdIot": "0014a2e9-1fa3-4627-9a83-9cb57b6248f4",
+    "TipoEvento": "ALAGAMENTO",
+    "IntensidadeEvento": "ALTO",
+    "LatitudeEvento": "lagitudeTeste",
+    "LongitudeEvento": "longitudeTeste",
+    "DataHoraEvento": "2025-05-28T14:30:00"
+}
+```
+
+**Response Body**
+```json
+{
+    "idEvento": "e826e4c4-56b9-4ef5-ac94-3ae0ae187ab5",
+    "idIot": "0014a2e9-1fa3-4627-9a83-9cb57b6248f4",
+    "tipoEvento": "ALAGAMENTO",
+    "intensidadeEvento": "ALTO",
+    "latitudeEvento": "lagitudeTeste",
+    "longitudeEvento": "longitudeTeste",
+    "dataHoraEvento": "2025-05-28T14:30:00"
+}
+```
+---
+**Endpoint**  
+`GET` → `https://localhost:7217/api/evento/iot/{IdIot}`
+
+**Response Body**
+```json
+{
+    "idEvento": "85d0f37f-9fad-4661-be05-8db287726cad",
+    "idIot": "85383d82-7911-41c2-8629-6e0b2b72930b",
+    "tipoEvento": "ONDA_DE_CALOR",
+    "intensidadeEvento": "ALTO",
+    "latitudeEvento": "100000000000",
+    "longitudeEvento": "100000000000",
+    "dataHoraEvento": "2025-06-02T00:29:59",
+    "alertas": [],
+    "iot": {
+        "idIot": "85383d82-7911-41c2-8629-6e0b2b72930b",
+        "tipoIot": "SISMOGRAFO",
+        "latitudeIot": "latitudeTeste",
+        "longitudeIot": "longitudeTeste",
+        "ultimaLeituraIot": 20,
+        "dataHoraUltimaLeituraIot": "2025-06-02T00:29:49.238767",
+        "unidadeMedidaIot": "CELSIUS",
+        "statusIot": "ATIVO"
+    }
+}
+```
+---
+**Endpoint**  
+`GET` → `https://localhost:7217/api/evento/{IdEvento}`
+
+**Response Body**
+```json
+[
+    {
+        "idEvento": "85d0f37f-9fad-4661-be05-8db287726cad",
+        "idIot": "85383d82-7911-41c2-8629-6e0b2b72930b",
+        "tipoEvento": "ONDA_DE_CALOR",
+        "intensidadeEvento": "ALTO"
+    }
+]
+```
+---
+**Endpoint**  
+`PATCH` → `https://localhost:7217/api/evento/{IdEvento}`
+
+**Request Body**
+```json
+{
+    "tipoEvento": "TORNADO",
+    "intensidadeEvento": "ALTO"
+}
+```
+
+**Response Body**
+```json
+{
+    "idEvento": "85d0f37f-9fad-4661-be05-8db287726cad",
+    "idIot": "85383d82-7911-41c2-8629-6e0b2b72930b",
+    "tipoEvento": "TORNADO",
+    "intensidadeEvento": "ALTO",
+    "latitudeEvento": "100000000000",
+    "longitudeEvento": "100000000000",
+    "dataHoraEvento": "2025-06-02T00:29:59",
+    "alertas": [],
+    "iot": {
+        "idIot": "85383d82-7911-41c2-8629-6e0b2b72930b",
+        "tipoIot": "SISMOGRAFO",
+        "latitudeIot": "latitudeTeste",
+        "longitudeIot": "longitudeTeste",
+        "ultimaLeituraIot": 20,
+        "dataHoraUltimaLeituraIot": "2025-06-02T00:29:49.238767",
+        "unidadeMedidaIot": "CELSIUS",
+        "statusIot": "ATIVO"
+    }
+}
+```
+---
+**Endpoint**  
+`DELETE` → `https://localhost:7217/api/evento/{IdEvento}`
+
+### Alerta Controller
+
+**Endpoint**  
+`GET` → `https://localhost:7217/api/alerta`
+
+**Response Body**
+```json
+[
+    {
+        "idAlerta": "3edb81ee-8658-410d-a1b4-9c60315df9d9",
+        "idEvento": "9ff939c3-0220-4e0c-99a9-101d83eb3b71",
+        "nivelAlerta": "CRITICO"
+    },
+    {
+        "idAlerta": "ac087298-be92-49dc-8255-fc6b0deccf4e",
+        "idEvento": "040f2528-7f20-4593-8512-ae711f0469a1",
+        "nivelAlerta": "CRITICO"
+    }
+]
+```
+---
+
+**Endpoint**  
+`POST` → `https://localhost:7217/api/alerta`
+
+**Request Body**
+```json
+{
+    "IdEvento": "85d0f37f-9fad-4661-be05-8db287726cad",
+    "NivelAlerta": "CRITICO",
+    "MensagemAlerta": "Mensagem Teste",
+    "DataHoraAlerta": "2025-05-28T14:30:00"
+}
+```
+
+**Response Body**
+```json
+{
+    "idAlerta": "82c9e600-bf09-4d61-a203-5abebd210db2",
+    "idEvento": "85d0f37f-9fad-4661-be05-8db287726cad",
+    "nivelAlerta": "CRITICO",
+    "mensagemAlerta": "Mensagem Teste",
+    "dataHoraAlerta": "2025-05-28T14:30:00"
+}
+```
+---
+**Endpoint**  
+`GET` → `https://localhost:7217/api/alerta/{IdAlerta}`
+
+**Response Body**
+```json
+{
+    "idAlerta": "82c9e600-bf09-4d61-a203-5abebd210db2",
+    "idEvento": "85d0f37f-9fad-4661-be05-8db287726cad",
+    "nivelAlerta": "CRITICO",
+    "mensagemAlerta": "Mensagem Teste",
+    "dataHoraAlerta": "2025-05-28T14:30:00",
+    "evento": {
+        "idEvento": "85d0f37f-9fad-4661-be05-8db287726cad",
+        "idIot": "85383d82-7911-41c2-8629-6e0b2b72930b",
+        "tipoEvento": "TORNADO",
+        "intensidadeEvento": "ALTO",
+        "latitudeEvento": "100000000000",
+        "longitudeEvento": "100000000000",
+        "dataHoraEvento": "2025-06-02T00:29:59"
+    }
+}
+```
+---
+**Endpoint**  
+`GET` → `https://localhost:7217/api/alerta/evento/{IdEvento}`
+
+**Response Body**
+```json
+[
+    {
+        "idAlerta": "3edb81ee-8658-410d-a1b4-9c60315df9d9",
+        "idEvento": "9ff939c3-0220-4e0c-99a9-101d83eb3b71",
+        "nivelAlerta": "CRITICO"
+    }
+]
+```
+---
+**Endpoint**  
+`PATCH` → `https://localhost:7217/api/alerta/{IdAlerta}`
+
+**Request Body**
+```json
+{
+    "NivelAlerta": "ALTO",
+    "MensagemAlerta": "Mensagem Teste"
+}
+```
+
+**Response Body**
+```json
+{
+    "idAlerta": "3edb81ee-8658-410d-a1b4-9c60315df9d9",
+    "idEvento": "9ff939c3-0220-4e0c-99a9-101d83eb3b71",
+    "nivelAlerta": "ALTO",
+    "mensagemAlerta": "Mensagem Teste",
+    "dataHoraAlerta": "2025-05-28T14:30:00",
+    "evento": {
+        "idEvento": "9ff939c3-0220-4e0c-99a9-101d83eb3b71",
+        "idIot": "0014a2e9-1fa3-4627-9a83-9cb57b6248f4",
+        "tipoEvento": "TORNADO",
+        "intensidadeEvento": "ALTO",
+        "latitudeEvento": "lagitudeTeste",
+        "longitudeEvento": "longitudeTeste",
+        "dataHoraEvento": "2025-05-28T14:30:00"
+    }
+}
+```
+
+---
+**Endpoint**  
+`DELETE` → `https://localhost:7217/api/alerta/{IdAlerta}`
+
 
 
 ## Dependências

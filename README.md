@@ -120,6 +120,132 @@ graph TD
     style J,K,L,M fill:#9C27B0,stroke:#7B1FA2
 ```
 
+## Testes
+
+**Link para Entrar no Workspace do Postman**: https://red-crater-624562.postman.co/workspace/My-Workspace~222938ca-e332-49fa-8596-15af3bbb1000/collection/34543089-443891c8-d15e-4b96-af45-0c413fd50473?action=share&creator=34543089
+
+### IoT Controller
+**Endpoint**  
+`POST` → `https://localhost:7217/api/iot`
+
+**Request Body**
+```json
+{
+    "TipoIot": "ANEMÔMETRO",
+    "UnidadeMedidaIot": "KM"
+}
+```
+
+**Response Body**
+```json
+{
+    "idIot": "b2aa2ef3-8f93-4420-84be-5e5387e53adc",
+    "tipoIot": "ANENOMETRO",
+    "latitudeIot": "",
+    "longitudeIot": "",
+    "ultimaLeituraIot": 0,
+    "dataHoraUltimaLeituraIot": "0001-01-01T00:00:00",
+    "unidadeMedidaIot": "KM"
+}
+```
+---
+
+**Endpoint**  
+`GET` → `https://localhost:7217/api/iot`
+
+**Response Body**
+```json
+{
+[
+    {
+        "idIot": "85383d82-7911-41c2-8629-6e0b2b72930b",
+        "tipoIot": "SISMOGRAFO",
+        "latitudeIot": "latitudeTeste",
+        "longitudeIot": "longitudeTeste",
+        "ultimaLeituraIot": 20,
+        "unidadeMedidaIot": "CELSIUS"
+    }
+]
+}
+```
+---
+**Endpoint**  
+`GET` → `https://localhost:7217/api/iot/{IdIot}`
+
+**Response Body**
+```json
+{
+    "idIot": "0014a2e9-1fa3-4627-9a83-9cb57b6248f4",
+    "tipoIot": "SENSOR_NIVEL_DE_AGUA",
+    "latitudeIot": "latitudeTeste",
+    "longitudeIot": "longitudeTeste",
+    "ultimaLeituraIot": 20,
+    "dataHoraUltimaLeituraIot": "2025-06-02T00:15:03.245397",
+    "unidadeMedidaIot": "KM",
+    "statusIot": "ATIVO",
+    "eventos": [
+        {
+            "idEvento": "040f2528-7f20-4593-8512-ae711f0469a1",
+            "idIot": "0014a2e9-1fa3-4627-9a83-9cb57b6248f4",
+            "tipoEvento": "TORNADO",
+            "intensidadeEvento": "ALTO",
+            "latitudeEvento": "lagitudeTeste",
+            "longitudeEvento": "longitudeTeste",
+            "dataHoraEvento": "2025-05-28T14:30:00"
+        },
+        {
+            "idEvento": "9ff939c3-0220-4e0c-99a9-101d83eb3b71",
+            "idIot": "0014a2e9-1fa3-4627-9a83-9cb57b6248f4",
+            "tipoEvento": "TORNADO",
+            "intensidadeEvento": "ALTO",
+            "latitudeEvento": "lagitudeTeste",
+            "longitudeEvento": "longitudeTeste",
+            "dataHoraEvento": "2025-05-28T14:30:00"
+        }
+    ]
+}
+```
+
+---
+**Endpoint**  
+`PUT` → `https://localhost:7217/api/iot/{IdIot}`
+
+**Request Body**
+```json
+{
+    "tipoIot": "SENSOR_NIVEL_DE_AGUA",
+    "latitudeIot": "latitudeTeste",
+    "longitudeIot": "longitudeTeste",
+    "ultimaLeituraIot": 20,
+    "unidadeMedidaIot": "KM",
+    "statusIot": "ATIVO"
+}
+```
+
+**Response Body**
+```json
+{
+    "idIot": "b2aa2ef3-8f93-4420-84be-5e5387e53adc",
+    "tipoIot": "SENSOR_NIVEL_DE_AGUA",
+    "latitudeIot": "latitudeTeste",
+    "longitudeIot": "longitudeTeste",
+    "ultimaLeituraIot": 20,
+    "dataHoraUltimaLeituraIot": "2025-06-02T00:25:49.8857703-03:00",
+    "unidadeMedidaIot": "KM",
+    "statusIot": "ATIVO",
+    "eventos": []
+}
+```
+
+---
+**Endpoint**  
+`DELETE` → `https://localhost:7217/api/iot/{IdIot}`
+
+---
+
+### Evento Controller
+
+
 ## Dependências
 | Componente       | Tecnologia/Pacote           | 
 |------------------|-----------------------------|

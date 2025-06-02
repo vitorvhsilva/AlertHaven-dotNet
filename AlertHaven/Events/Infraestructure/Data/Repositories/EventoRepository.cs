@@ -62,6 +62,7 @@ namespace Events.Infraestructure.Data.Repositories
         {
             return _context.EventoEntities
                 .Include(e => e.Iot)
+                .Include(e => e.Alertas)
                 .FirstOrDefault(e => e.IdEvento == Id);
         }
 
